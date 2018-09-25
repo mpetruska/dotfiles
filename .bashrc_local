@@ -1,0 +1,13 @@
+# Node and npm
+
+# export NPM_PACKAGES="${HOME}/.npm-packages"
+# export NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
+# export PATH="$NPM_PACKAGES/bin:$PATH"
+
+# Local node bin
+
+# export PATH="./node_modules/.bin:$PATH"
+
+# Local bin
+
+# export PATH="${HOME}/.local/bin:$PATH"
