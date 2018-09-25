@@ -28,15 +28,12 @@ export PATH="./node_modules/.bin:$PATH"
 
 export PATH="${HOME}/.local/bin:$PATH"
 
-# RbEnv
+# Ssh agent
 
-eval "$(rbenv init -)"
+eval "$(ssh-agent -s)" > /dev/null
 
-# Brew sbin
+# Local extensions
 
-export PATH="/usr/local/sbin:$PATH"
-
-# OPAM & OCaml
-
-. /Users/mark/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
-export OCAMLPARAM="safe-string=0,_"
+if [ -f .bashrc_local ]; then
+  source .bashrc_local
+fi
