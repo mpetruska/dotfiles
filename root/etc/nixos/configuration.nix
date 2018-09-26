@@ -14,7 +14,7 @@
 
     initrd = {
       # Disable journaling check on boot because virtualbox doesn't need it
-      checkJournalingFS = false;
+      # checkJournalingFS = false;
     };
 
     # Use the systemd-boot EFI boot loader.
@@ -33,7 +33,8 @@
   networking = {
     hostName = ""; # Define your hostname.
     # hostId = # (use whatever was generated)
-    # wireless.enable = true;  # not needed with virtualbox
+    networkmanager.enable = true;
+    wireless.enable = true;  # not needed with virtualbox
   };
 
   # Set your time zone.
