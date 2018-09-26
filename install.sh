@@ -9,6 +9,7 @@ for file in $(find $SOURCE_DIR \
                 -not -path "*/.git/*" \
                 -not -path "*/.bashrc_local" \
                 -not -path "*/.ssh/config_local" \
+                -not -path "*/root/*" \
                 -not -path "*/install.sh" \
                 -not -path "*/nix-packages.sh")
 do
