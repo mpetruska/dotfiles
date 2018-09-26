@@ -3,3 +3,5 @@
 	email = petruska.mark@gmail.com
 [push]
 	default = simple
+[core]
+	editor = vim
