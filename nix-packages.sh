@@ -5,9 +5,9 @@ nix-channel --update
 
 # Application
 
-nix-env -i firefox
+nix-env -iA nixos.firefox nixos.termite nixos.ranger
 
 # Development
 
-nix-env -i atom docker git sbt scala \
-           idea-community
+nix-env -iA nixos.atom nixos.docker nixos.git nixos.sbt nixos.scala \
+           nixos.jetbrains.idea-community

@@ -411,7 +411,7 @@ myWorkspaces = [ ws1
 
 --myTerminal          = "terminator"
 --myTerminalClass     = "Terminator"
-myTerminal          = "konsole"
+myTerminal          = "termite"
 myAltTerminal       = "cool-retro-term"
 myBrowser           = "firefox"
 myBrowserClass      = "Firefox"
