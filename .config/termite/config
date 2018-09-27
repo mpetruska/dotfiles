@@ -6,51 +6,51 @@ font = Inconsolata 9
 # Default Dark
 
 [colors]
-# Base16 Atelier Forest
+# Base16 Atelier Dune
 # Author: Bram de Haan (http://atelierbramdehaan.nl)
 
-foreground          = #a8a19f
-foreground_bold     = #e6e2e0
-cursor              = #e6e2e0
-cursor_foreground   = #1b1918
-background          = rgba(27, 25, 24)
+foreground          = #a6a28c
+foreground_bold     = #e8e4cf
+cursor              = #e8e4cf
+cursor_foreground   = #20201d
+background          = rgba(32, 32, 29)
 
 # 16 color space
 
 # Black, Gray, Silver, White
-color0  = #1b1918
-color8  = #766e6b
-color7  = #a8a19f
-color15 = #f1efee
+color0  = #20201d
+color8  = #7d7a68
+color7  = #a6a28c
+color15 = #fefbec
 
 # Red
-color1  = #f22c40
-color9  = #f22c40
+color1  = #d73737
+color9  = #d73737
 
 # Green
-color2  = #7b9726
-color10 = #7b9726
+color2  = #60ac39
+color10 = #60ac39
 
 # Yellow
-color3  = #c38418
-color11 = #c38418
+color3  = #ae9513
+color11 = #ae9513
 
 # Blue
-color4  = #407ee7
-color12 = #407ee7
+color4  = #6684e1
+color12 = #6684e1
 
 # Purple
-color5  = #6666ea
-color13 = #6666ea
+color5  = #b854d4
+color13 = #b854d4
 
 # Teal
-color6  = #3d97b8
-color14 = #3d97b8
+color6  = #1fad83
+color14 = #1fad83
 
 # Extra colors
-color16 = #df5320
-color17 = #c33ff3
-color18 = #2c2421
-color19 = #68615e
-color20 = #9c9491
-color21 = #e6e2e0
+color16 = #b65611
+color17 = #d43552
+color18 = #292824
+color19 = #6e6b5e
+color20 = #999580
+color21 = #e8e4cf
