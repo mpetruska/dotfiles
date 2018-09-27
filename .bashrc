@@ -1,4 +1,8 @@
 
+# Default editor
+
+export EDITOR=vim
+
 # Git branch in prompt
 
 parse_git_branch() {
