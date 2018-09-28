@@ -53,6 +53,7 @@
     neofetch
     vim
     wget
+    gnome3.zenity
 
     # Environment
     compton
