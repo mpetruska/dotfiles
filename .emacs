@@ -1,37 +1,35 @@
-(require 'package)
-
-(add-to-list 'package-archives '("org"   . "http://orgmode.org/elpa/"))
-(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
-(add-to-list 'package-archives '("gnu"   . "https://elpa.gnu.org/packages/"))
-
-(setq package-enable-at-startup nil)
-
-(defun ensure-package-installed (&rest packages)
-  "Assure every package is installed."
-  (mapcar
-   (lambda (package)
-     (if (package-installed-p package)
-         nil
-         (package-install package)))
-   packages))
-
-;; Make sure to have downloaded archive description.
-(or (file-exists-p package-user-dir)
-    (package-refresh-contents))
-
-;; Activate installed packages
-(package-initialize)
-
-(ensure-package-installed 'base16-theme 'neotree 'all-the-icons)
-
 (scroll-bar-mode -1)
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 (global-display-line-numbers-mode)
 
-(setq neo-theme (if (display-graphic-p) 'icons 'arrow))
+(require 'package)
+(setq
+  package-archives '(("gnu"          . "http://elpa.gnu.org/packages/")
+                     ("org"          . "http://orgmode.org/elpa/")
+                     ("melpa"        . "http://melpa.org/packages/")
+                     ("melpa-stable" . "http://stable.melpa.org/packages/"))
+  package-archive-priorities '(("melpa-stable" . 1)))
 
-(global-set-key [f8] 'neotree-toggle)
+(package-initialize)
+(when (not package-archive-contents)
+  (package-refresh-contents))
+
+(require 'use-package)
+
+(use-package base16-theme)
+
+(use-package all-the-icons)
+
+(use-package neotree
+  :config
+  (setq neo-theme (if (display-graphic-p) 'icons 'arrow))
+  (setq neo-window-width 50)
+  (global-set-key [f8] 'neotree-toggle))
+
+(use-package ensime
+  :ensure t
+  :pin melpa-stable)
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -47,7 +45,7 @@
  '(custom-enabled-themes (quote (base16-materia)))
  '(custom-safe-themes
    (quote
-    ("d9dab332207600e49400d798ed05f38372ec32132b3f7d2ba697e59088021555" default)))
+    ("02199888a97767d7779269a39ba2e641d77661b31b3b8dd494b1a7250d1c8dc1" "d9dab332207600e49400d798ed05f38372ec32132b3f7d2ba697e59088021555" default)))
  '(package-selected-packages
    (quote
-    (neotree liso-theme darcula-theme brutalist-theme boron-theme borland-blue-theme blackboard-theme base16-theme badwolf-theme atom-one-dark-theme atom-dark-theme arjen-grey-theme apropospriate-theme ample-zen-theme ample-theme all-the-icons alect-themes ahungry-theme afternoon-theme abyss-theme))))
+    (use-package neotree liso-theme borland-blue-theme base16-theme all-the-icons afternoon-theme))))
