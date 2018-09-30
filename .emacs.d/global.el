@@ -2,6 +2,7 @@
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 (global-display-line-numbers-mode)
+(setq inhibit-startup-screen t)
 
 (require 'package)
 (setq
@@ -16,4 +17,11 @@
   (package-refresh-contents))
 
 (require 'use-package)
+
+(use-package auto-package-update
+  :ensure t
+  :config
+  (setq auto-package-update-delete-old-versions t)
+  (setq auto-package-update-hide-results t)
+  (auto-package-update-maybe))
 

@@ -12,11 +12,14 @@
   (load-file (expand-file-name file user-init-dir)))
 
 (load-user-file           "global.el")
+(load-user-file        "dashboard.el")
 (load-user-file           "ensime.el")
 (load-user-file "multiple-cursors.el")
 (load-user-file          "neotree.el")
+(load-user-file       "projectile.el")
 
-(use-package base16-theme)
+(use-package base16-theme
+  :ensure t)
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
