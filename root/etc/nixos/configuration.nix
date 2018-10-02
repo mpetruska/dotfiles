@@ -18,8 +18,8 @@
     };
 
     # Use the systemd-boot EFI boot loader.
-    # loader.systemd-boot.enable = true;
-    # loader.efi.canTouchEfiVariables = true;
+    loader.systemd-boot.enable = true;
+    loader.efi.canTouchEfiVariables = true;
 
     loader.grub = {
       enable  = true;
@@ -31,7 +31,7 @@
 
   # Enable networking.
   networking = {
-    hostName = ""; # Define your hostname.
+    hostName = "Dell5490"; # Define your hostname.
     # hostId = # (use whatever was generated)
     networkmanager.enable = true;
     wireless.enable = true;  # not needed with virtualbox
@@ -105,8 +105,15 @@
 
     # Enable the X11 windowing system.
     xserver = {
+    
       enable = true;
       layout = "us, hu";
+      
+      libinput = {
+        enable             = true;
+        disableWhileTyping = true;
+        middleEmulation    = false;
+      };
 
       displayManager = {
         gdm    .enable = false;
@@ -156,30 +163,23 @@
 
   # Virtualization stuff
   virtualization = {
-
-    # Virtualbox
-    virtualbox.host = {
-      enable = true;
-      enableHardening = false;
-    };
-
-    # Docker
-    docker = {
-      enable = true;
-    };
+  
+    virtualbox.host.enable = true;
+    docker         .enable = true;
 
   };
 
   # Enable sound.
   sound.enable = true;
   hardware.pulseaudio.enable = true;
+  
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.mark = {
     isNormalUser = true;
     group        = "users";
     home         = "/home/mark";
-    extraGroups  = [ "wheel" "networkmanager" "docker" ];
+    extraGroups  = [ "wheel" "networkmanager" "docker" "vboxusers" ];
   };
 
   # This value determines the NixOS release with which your system is to be
