@@ -294,6 +294,7 @@ main = do
 
     spawn "compton -f"
     spawn "feh --bg-scale .background"
+    spawn "xgamma -gamma 0.77"
 
     xmonad
         -- $ dynamicProjects projects
@@ -1224,7 +1225,7 @@ myKeys conf = let
     subKeys "System"
     [ ("M-r"                    , addName "Rebuild & restart XMonad"        $ spawn "xmonad --recompile && xmonad --restart")
     , ("M-S-e"                  , addName "Quit XMonad"                     $ confirmPrompt hotPromptTheme "Quit XMonad" $ io (exitWith ExitSuccess))
-    , ("M-l"                    , addName "Lock screen"                     $ spawn "xset s activate")
+    , ("M-x"                    , addName "Lock screen"                     $ spawn "i3lock --color=000000")
     , ("M-<F4>"                 , addName "Print Screen"                    $ return ())
     , ("M-F1"                   , addName "Show Keybindings"                $ return ())
     ] ^++^
@@ -1232,21 +1233,21 @@ myKeys conf = let
     -----------------------------------------------------------------------
     -- Actions
     -----------------------------------------------------------------------
-    --subKeys "Actions"
+    subKeys "Actions"
     --[ ("M-a"                    , addName "Notify w current X selection"    $ unsafeWithSelection "notify-send")
     --, ("M-7"                    , addName "TESTING"                         $ runInTerm "-name glances" "glances" )
     --, ("M-u"                    , addName "Copy current browser URL"        $ spawn "url-actions")
     --, ("M-o"                    , addName "Display (output) launcher"       $ spawn "displayctl menu")
     --, ("M-<XF86Display>"        , addName "Display - force internal"        $ spawn "displayctl internal")
     --, ("S-<XF86Display>"        , addName "Display - force internal"        $ spawn "displayctl internal")
-    --, ("M-i"                    , addName "Network (Interface) launcher"    $ spawn "nmcli_dmenu")
+    [ ("M-i"                    , addName "Network (Interface) launcher"    $ spawn "networkmanager_dmenu")
     --, ("M-/"                    , addName "On-screen keys"                  $ spawn "killall screenkey &>/dev/null || screenkey --no-systray")
     --, ("M-S-/"                  , addName "On-screen keys settings"         $ spawn "screenkey --show-settings")
     --, ("M1-p"                   , addName "Capture screen"                  $ spawn "screenshot" )
     --, ("M1-S-p"                 , addName "Capture screen - area select"    $ spawn "screenshot area" )
     --, ("M1-r"                   , addName "Record screen"                   $ spawn "screencast" )
     --, ("M1-S-r"                 , addName "Record screen - area select"     $ spawn "screencast area" )
-    --] ^++^
+    ] ^++^
 
     -----------------------------------------------------------------------
     -- Launchers
@@ -1469,6 +1470,11 @@ myKeys conf = let
       ("<XF86AudioRaiseVolume>"  , addName "Volume up"                   $ spawn "amixer set Master 5%+")
     , ("<XF86AudioLowerVolume>"  , addName "Volume down"                 $ spawn "amixer set Master 5%-")
     , ("<XF86AudioMute>"         , addName "Toggle mute"                 $ spawn "amixer set Master toggle")
+    ] ^++^
+
+    subKeys "Laptop Controls"
+    [ ("<XF86MonBrightnessUp>"   , addName "Brightness up"               $ spawn "xbacklight + 1")
+    , ("<XF86MonBrightnessDown>" , addName "Brightness down"             $ spawn "xbacklight - 1")
     ]
 
     where

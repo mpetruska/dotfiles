@@ -29,17 +29,17 @@ Config {
 		 , Run Battery        [ "--template" , "Batt: <acstatus>"
                              , "--Low"      , "10"        -- units: %
                              , "--High"     , "80"        -- units: %
-                             , "--low"      , "darkred"
-                             , "--normal"   , "darkorange"
-                             , "--high"     , "darkgreen"
+                             , "--low"      , "red"
+                             , "--normal"   , "orange"
+                             , "--high"     , "green"
 
                              , "--" -- battery specific options
                                        -- discharging status
                                        , "-o"	, "<left>% (<timeleft>)"
                                        -- AC "on" status
-                                       , "-O"	, "<fc=#dAA520>Charging</fc>"
+                                       , "-O"	, "<left>% (<fc=#dAA520>Charging</fc>)"
                                        -- charged status
-                                       , "-i"	, "<fc=#006000>Charged</fc>"
+                                       , "-i"	, "<left>% (<fc=#006000>Charged</fc>)"
                              ] 50
                  , Run Date "%Y-%m-%d %a %H:%M" "date" 10
                  , Run Com "/home/mark/.xmonad/bin/status-vol" [] "volume" 10
