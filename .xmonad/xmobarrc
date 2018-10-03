@@ -12,7 +12,7 @@ Config {
     -- right_padding = num_icons * icon_size
     -- right_padding = 12 * 23 = 276
     -- Example: position = TopP 0 276
-      position         = TopP 0 20
+      position         = TopP 0 0
     , font             = "xft:terminus-medium:pixelsize=10"
     , additionalFonts  = [ "xft:FontAwesome:pixelsize=10:antialias=true:hinting=true" ]
     , bgColor          = "#000000"
@@ -47,5 +47,5 @@ Config {
                  ],
     , sepChar = "%"
     , alignSep = "}{"
-    , template = "%StdinReader% }{ %multicpu%   %memory%   %swap%   %volume%   %wlp2s0wi%   %battery%   <fc=#FFFFCC>%date%</fc>"
+    , template = "%StdinReader% }{ %multicpu%   %memory%   %swap%   %volume%   %wlp2s0wi%   %battery%   <fc=#FFFFCC>%date%</fc> "
     }
