@@ -21,12 +21,6 @@
     loader.systemd-boot.enable = true;
     loader.efi.canTouchEfiVariables = true;
 
-    loader.grub = {
-      enable  = true;
-      version = 2;
-      device  = "/dev/sda";
-    };
-
   };
 
   # Enable networking.
@@ -34,7 +28,6 @@
     hostName = "Dell5490"; # Define your hostname.
     # hostId = # (use whatever was generated)
     networkmanager.enable = true;
-    wireless.enable = true;  # not needed with virtualbox
   };
 
   # Set your time zone.
@@ -59,9 +52,19 @@
     compton
     dmenu
     feh
+    haskellPackages.iwlib
     haskellPackages.xmobar
+    i3lock
+    networkmanager_dmenu
+    xorg.xbacklight
+    xorg.xgamma
+
+    # Basic packages
+    git
 
   ];
+
+  security.wrappers.slock.source = "${pkgs.slock.out}/bin/slock";
 
   fonts = {
     enableCoreFonts        = true;
@@ -105,14 +108,15 @@
 
     # Enable the X11 windowing system.
     xserver = {
-    
+
       enable = true;
       layout = "us, hu";
-      
+
       libinput = {
         enable             = true;
         disableWhileTyping = true;
         middleEmulation    = false;
+        tappingDragLock    = false;
       };
 
       displayManager = {
@@ -159,11 +163,19 @@
 
     };
 
+    redshift = {
+      enable            = true;
+      latitude          = "47.4979";
+      longitude         = "19.0402";
+      temperature.day   = 6500;
+      temperature.night = 2700;
+    };
+
   };
 
   # Virtualization stuff
-  virtualization = {
-  
+  virtualisation = {
+
     virtualbox.host.enable = true;
     docker         .enable = true;
 
@@ -172,7 +184,7 @@
   # Enable sound.
   sound.enable = true;
   hardware.pulseaudio.enable = true;
-  
+
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.mark = {
@@ -186,6 +198,6 @@
   # compatible, in order to avoid breaking some software such as database
   # servers. You should change this only after NixOS release notes say you
   # should.
-  system.stateVersion = "18.03"; # Did you read the comment?
+  system.stateVersion = "19.03"; # Did you read the comment?
 
 }
