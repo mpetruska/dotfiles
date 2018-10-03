@@ -1133,7 +1133,7 @@ myLayoutHook = showWorkspaceName
 -- Bindings                                                             {{{
 ---------------------------------------------------------------------------
 
-myModMask = mod1Mask -- super (and on my system, hyper) keys
+myModMask = mod4Mask -- super (and on my system, hyper) keys
 
 -- Display keyboard mappings using zenity
 -- from https://github.com/thomasf/dotfiles-thomasf-xmonad/

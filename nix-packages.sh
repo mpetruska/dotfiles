@@ -10,4 +10,4 @@ nix-env -iA nixos.firefox nixos.termite nixos.ranger
 # Development
 
 nix-env -iA nixos.atom nixos.docker nixos.git nixos.jdk nixos.sbt nixos.scala \
-            nixos.emacs nixos.jetbrains.idea-community
+            nixos.emacs nixos.jetbrains.idea-community nixos.haskellPackages.iwlib
