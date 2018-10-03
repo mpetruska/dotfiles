@@ -1,4 +1,6 @@
-(use-package all-the-icons)
+(use-package all-the-icons
+  :ensure t
+  :pin melpa-stable)
 
 (use-package neotree
   :ensure t
