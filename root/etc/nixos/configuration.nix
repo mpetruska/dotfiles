@@ -109,8 +109,9 @@
     # Enable the X11 windowing system.
     xserver = {
 
-      enable = true;
-      layout = "us, hu";
+      enable     = true;
+      layout     = "us, hu";
+      xkbOptions = "grp:alt_shift_toggle";
 
       libinput = {
         enable             = true;
@@ -167,8 +168,8 @@
       enable            = true;
       latitude          = "47.4979";
       longitude         = "19.0402";
-      temperature.day   = 6500;
-      temperature.night = 2700;
+      temperature.day   = 5700;
+      temperature.night = 3500;
     };
 
   };
