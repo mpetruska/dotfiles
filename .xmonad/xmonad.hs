@@ -294,7 +294,7 @@ main = do
 
     spawn "compton -f"
     spawn "feh --bg-scale .background"
-    spawn "xgamma -gamma 0.77"
+    spawn "xgamma -gamma 0.8"
 
     xmonad
         -- $ dynamicProjects projects

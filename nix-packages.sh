@@ -5,7 +5,8 @@ nix-channel --update
 
 # Applications
 
-nix-env -iA nixos.firefox nixos.termite nixos.ranger nixos.slack
+nix-env -iA nixos.firefox nixos.termite nixos.ranger nixos.slack \
+	    nixos.xorg.xkill
 
 # Development
 
