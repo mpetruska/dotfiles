@@ -21,11 +21,11 @@ Config {
     , overrideRedirect = False
     , allDesktops      = True
     , persistent       = True
-    , commands = [ Run MultiCpu ["-t","Cpu: <total0> <total1> <total2> <total3> <total4> <total5> <total6> <total7>","-L","30","-H","60","-h","#FFB6B0","-l","#CEFFAC","-n","#FFFFCC","-w","3"] 10
+    , commands = [ Run MultiCpu ["-t","Cpu: <vbar0><vbar1><vbar2><vbar3><vbar4><vbar5><vbar6><vbar7>","-L","30","-H","60","-h","#FFB6B0","-l","#CEFFAC","-n","#FFFFCC","-w","3"] 10
                  , Run Memory ["-t","Mem: <usedratio>%","-H","8192","-L","4096","-h","#FFB6B0","-l","#CEFFAC","-n","#FFFFCC"] 10
                  , Run Swap ["-t","Swap: <usedratio>%","-H","1024","-L","512","-h","#FFB6B0","-l","#CEFFAC","-n","#FFFFCC"] 10
                  -- , Run Network "wlp2s0" ["-t","Net: <rx>, <tx>","-H","200","-L","10","-h","#FFB6B0","-l","#CEFFAC","-n","#FFFFCC"] 10
-		 , Run Wireless "wlp2s0" [ "-t", "<essid> <qualityvbar> (<quality>)" ] 10
+		 , Run Wireless "wlp2s0" [ "-t", "<essid> <qualityvbar>" ] 10
 		 , Run Battery        [ "--template" , "Batt: <acstatus>"
                              , "--Low"      , "10"        -- units: %
                              , "--High"     , "80"        -- units: %
@@ -41,11 +41,14 @@ Config {
                                        -- charged status
                                        , "-i"	, "<left>% (<fc=#006000>Charged</fc>)"
                              ] 50
+		 , Run Kbd [ ("us", "<fc=#D0D000>US</fc>")
+                           , ("hu", "<fc=#00D000>HU</fc>")
+                           ]
                  , Run Date "%Y-%m-%d %a %H:%M" "date" 10
                  , Run Com "/home/mark/.xmonad/bin/status-vol" [] "volume" 10
                  , Run StdinReader
                  ],
     , sepChar = "%"
     , alignSep = "}{"
-    , template = "%StdinReader% }{ %multicpu%   %memory%   %swap%   %volume%   %wlp2s0wi%   %battery%   <fc=#FFFFCC>%date%</fc> "
+    , template = "%StdinReader% }{ %multicpu%   %memory%   %swap%   %volume%   %wlp2s0wi%   %battery%   %kbd%   <fc=#FFFFCC>%date%</fc> "
     }
