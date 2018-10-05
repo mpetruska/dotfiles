@@ -6,7 +6,7 @@ nix-channel --update
 # Applications
 
 nix-env -iA nixos.firefox nixos.termite nixos.ranger nixos.slack \
-	    nixos.xorg.xkill
+	    nixos.xorg.xkill nixos.skype nixos.dpkg nixos.openvpn
 
 # Development
 
