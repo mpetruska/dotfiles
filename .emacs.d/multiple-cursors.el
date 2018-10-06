@@ -2,5 +2,5 @@
 (use-package multiple-cursors
   :ensure t
   :config
-  (global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines))
+  (global-set-key (kbd "C-s-c C-s-c") 'mc/edit-lines))
 

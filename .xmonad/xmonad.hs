@@ -292,9 +292,9 @@ main = do
 
     -- for taffybar, add pagerHints below
 
-    spawn "xfce4-notifyd"
     spawn "compton -f"
     spawn "feh --bg-scale .background"
+    spawn "xfce4-notifyd"
 
     xmonad
         -- $ dynamicProjects projects
