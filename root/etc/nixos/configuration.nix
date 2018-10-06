@@ -55,7 +55,9 @@
     haskellPackages.iwlib
     haskellPackages.xmobar
     i3lock
+    libnotify
     networkmanager_dmenu
+    xfce.xfce4-notifyd
     xorg.xbacklight
     xorg.xgamma
 
@@ -170,6 +172,11 @@
       longitude         = "19.0402";
       temperature.day   = 5700;
       temperature.night = 3500;
+    };
+
+    unclutter = {
+      enable  = true;
+      timeout = 2;
     };
 
   };
