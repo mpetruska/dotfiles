@@ -625,9 +625,9 @@ barFull = avoidStruts $ Simplest
 
 -- cf http://xmonad.org/xmonad-docs/xmonad-contrib/src/XMonad-Config-Droundy.html
 
-myLayoutHook = showWorkspaceName
+myLayoutHook = --showWorkspaceName
              -- $ onWorkspace "AV" floatWorkSpace
-             $ fullscreenFloat -- fixes floating windows going full screen, while retaining "bounded" fullscreen
+               fullscreenFloat -- fixes floating windows going full screen, while retaining "bounded" fullscreen
              $ fullScreenToggle
              $ fullBarToggle
              $ mirrorToggle
