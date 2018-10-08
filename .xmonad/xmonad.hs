@@ -294,7 +294,7 @@ main = do
 
     spawn "compton -f"
     spawn "feh --bg-scale .background"
-    spawn "xfce4-notifyd"
+    spawn "twmnd"
 
     xmonad
         -- $ dynamicProjects projects
