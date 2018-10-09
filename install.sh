@@ -6,6 +6,7 @@ pushd $HOME
 
 for file in $(find $SOURCE_DIR \
                 -type f \
+		-not -path "*/*~" \
                 -not -path "*/.git/*" \
 		-not -path "*/.gitignore" \
                 -not -path "*/.bashrc_local" \

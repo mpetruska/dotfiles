@@ -292,9 +292,7 @@ main = do
 
     -- for taffybar, add pagerHints below
 
-    spawn "compton -f"
-    spawn "feh --bg-scale .background"
-    spawn "twmnd"
+    spawn "~/.xmonad/autostart.sh"
 
     xmonad
         -- $ dynamicProjects projects
