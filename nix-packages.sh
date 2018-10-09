@@ -8,7 +8,8 @@ nix-channel --update
 
 nix-env -iA nixos.firefox nixos.termite nixos.ranger nixos.slack \
 	nixos.xorg.xkill nixos.skype nixos.dpkg nixos.openvpn \
-	nixos.chromium nixos.lm_sensors
+	nixos.chromium nixos.lm_sensors nixos.postman \
+	nixos.kdeApplications.spectacle
 
 # Development
 
