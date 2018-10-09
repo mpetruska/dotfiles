@@ -55,9 +55,10 @@
     haskellPackages.iwlib
     haskellPackages.xmobar
     i3lock
+    killall
     libnotify
     networkmanager_dmenu
-    xfce.xfce4-notifyd
+    twmn
     xorg.xbacklight
     xorg.xgamma
 
@@ -176,7 +177,7 @@
 
     unclutter = {
       enable  = true;
-      timeout = 2;
+      timeout = 1;
     };
 
   };
