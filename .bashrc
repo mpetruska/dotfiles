@@ -13,7 +13,7 @@ parse_git_directory() {
     basename `git rev-parse --show-toplevel 2> /dev/null` 2> /dev/null
 }
 
-export PS1="\W \[\033[33m\]\$(parse_git_directory)\[\033[00m\]\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
+export PS1="\W \[\033[32m\]\$(parse_git_directory)\[\033[00m\]\[\033[36m\]\$(parse_git_branch)\[\033[00m\] $ "
 
 # Local extensions
 
