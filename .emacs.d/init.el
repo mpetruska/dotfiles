@@ -1,6 +1,3 @@
-
-
-
 (defconst user-init-dir
   (cond ((boundp 'user-emacs-directory)
 	  user-emacs-directory)
