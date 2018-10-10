@@ -11,6 +11,11 @@ nix-env -iA nixos.firefox nixos.termite nixos.ranger nixos.slack \
 	nixos.chromium nixos.lm_sensors nixos.postman \
 	nixos.kdeApplications.spectacle
 
+# Media
+
+nix-env -iA nixos.mplayer nixos.youtubeDL nixos.python36Packages.mps-youtube \
+	nixos.asciinema
+
 # Development
 
 nix-env -iA nixos.atom nixos.docker nixos.git nixos.sbt nixos.scala \
