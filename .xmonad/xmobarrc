@@ -41,14 +41,15 @@ Config {
                                        -- charged status
                                        , "-i"	, "<left>% (<fc=#006000>Charged</fc>)"
                              ] 50
-		 , Run Kbd [ ("us", "<fc=#D0D000>US</fc>")
-                           , ("hu", "<fc=#00D000>HU</fc>")
-                           ]
+		 -- , Run Kbd [ ("us", "<fc=#D0D000>US</fc>")
+                 --          , ("hu", "<fc=#00D000>HU</fc>")
+                 --          ]
                  , Run Date "%Y-%m-%d %a %H:%M" "date" 10
                  , Run Com "/home/mark/.xmonad/bin/status-vol" [] "volume" 10
                  , Run StdinReader
                  ],
     , sepChar = "%"
     , alignSep = "}{"
-    , template = "%StdinReader% }{ %multicpu%   %memory%   %swap%   %volume%   %wlp2s0wi%   %battery%   %kbd%   <fc=#FFFFCC>%date%</fc> "
+--    , template = "%StdinReader% }{ %multicpu%   %memory%   %swap%   %volume%   %wlp2s0wi%   %battery%   %kbd%   <fc=#FFFFCC>%date%</fc> "
+    , template = "%StdinReader% }{ %multicpu%   %memory%   %swap%   %volume%   %wlp2s0wi%   %battery%   <fc=#FFFFCC>%date%</fc> "
     }

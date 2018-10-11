@@ -1226,7 +1226,7 @@ myKeys conf = let
     [ ("M-r"                    , addName "Rebuild & restart XMonad"        $ spawn "xmonad --recompile && xmonad --restart")
     , ("M-S-e"                  , addName "Quit XMonad"                     $ confirmPrompt hotPromptTheme "Quit XMonad" $ io (exitWith ExitSuccess))
     , ("M-x"                    , addName "Lock screen"                     $ spawn "i3lock --color=000000")
-    , ("M-<F4>"                 , addName "Print Screen"                    $ spawn "spectacle")
+    , ("M-<F4>"                 , addName "Print Screen"                    $ spawn "spectacle --region")
     , ("M-F1"                   , addName "Show Keybindings"                $ return ())
     ] ^++^
 
@@ -1279,8 +1279,8 @@ myKeys conf = let
     --, ("M-d"                    , addName "Duplicate w to all ws"           $ windows copyToAll)
     --, ("M-S-d"                  , addName "Kill other duplicates"           $ killAllOtherCopies)
     , ("M-u"                    , addName "Duplicate w to all ws"           $ toggleCopyToAll)
-    , ("M-p"                    , addName "Hide window to stack"            $ withFocused hideWindow)
-    , ("M-S-p"                  , addName "Restore hidden window (FIFO)"    $ popOldestHiddenWindow)
+    --, ("M-p"                    , addName "Hide window to stack"            $ withFocused hideWindow)
+    --, ("M-S-p"                  , addName "Restore hidden window (FIFO)"    $ popOldestHiddenWindow)
 
     , ("M-b"                    , addName "Promote"                         $ promote)
 
