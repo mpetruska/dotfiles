@@ -8,7 +8,7 @@ nix-channel --update
 
 nix-env -iA nixos.firefox nixos.termite nixos.ranger nixos.slack \
 	nixos.xorg.xkill nixos.skype nixos.dpkg nixos.openvpn \
-	nixos.chromium nixos.lm_sensors nixos.postman \
+	nixos.lm_sensors nixos.postman \
 	nixos.kdeApplications.spectacle nixos.calc
 
 # Media
@@ -20,4 +20,4 @@ nix-env -iA nixos.mplayer nixos.youtubeDL nixos.python36Packages.mps-youtube \
 
 nix-env -iA nixos.atom nixos.docker nixos.git nixos.sbt nixos.scala \
 	nixos.emacs nixos.jetbrains.idea-community nixos.vagrant \
-	nixos.dbeaver
+	nixos.dbeaver nixos.nodejs nixos.yarn

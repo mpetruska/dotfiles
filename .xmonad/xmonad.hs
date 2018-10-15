@@ -1,5 +1,3 @@
-
-
 {-# LANGUAGE AllowAmbiguousTypes, DeriveDataTypeable, TypeSynonymInstances, MultiParamTypeClasses #-}
 ---------------------------------------------------------------------------
 --                                                                       --
@@ -1577,16 +1575,16 @@ myLogHook h = do
 
 myFadeHook = composeAll
     [ opaque -- default to opaque
-    , isUnfocused --> opacity 0.8
-    , (className =? "Firefox")                              --> opaque
-    , (className =? "vlc")                                  --> opaque
+    , isUnfocused                                        --> opacity 0.75
+    , (className =? "Firefox")                           --> opaque
+    , (className =? "vlc")                               --> opaque
     -- , (className =? "Terminator")     <&&> (isUnfocused) --> opacity 0.9
     -- , (className =? "URxvt")          <&&> (isUnfocused) --> opacity 0.9
     -- , (className =? "Gnome-terminal") <&&> (isUnfocused) --> opacity 0.9
-    -- , fmap ("Google" `isPrefixOf`) className --> opaque
-    , isDialog --> opaque
-    --, isUnfocused --> opacity 0.55
-    --, isFloating  --> opacity 0.75
+    -- , fmap ("Google" `isPrefixOf`) className             --> opaque
+    , isDialog                                           --> opaque
+    --, isUnfocused                                         --> opacity 0.55
+    --, isFloating                                          --> opacity 0.75
     ]
 
 ------------------------------------------------------------------------}}}
