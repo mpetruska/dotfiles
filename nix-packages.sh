@@ -8,8 +8,8 @@ nix-channel --update
 
 nix-env -iA nixos.firefox nixos.termite nixos.ranger nixos.slack \
 	nixos.xorg.xkill nixos.skype nixos.dpkg nixos.openvpn \
-	nixos.lm_sensors nixos.postman \
-	nixos.kdeApplications.spectacle nixos.calc
+	nixos.lm_sensors nixos.postman nixos.kdeApplications.spectacle \
+	nixos.calc nixos.libreoffice
 
 # Media
 
