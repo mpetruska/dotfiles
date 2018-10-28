@@ -194,6 +194,8 @@
   sound.enable = true;
   hardware.pulseaudio.enable = true;
 
+  # Bluetooth
+  hardware.bluetooth.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.mark = {
