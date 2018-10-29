@@ -130,9 +130,13 @@
         slim   .enable = false;
         xpra   .enable = false;
         sessionCommands = ''
+	
           # run ssh-agent
           killall ssh-agent
           eval "$(ssh-agent -s)"
+
+          # fix for java vs non-reparenting window managers
+          export _JAVA_AWT_WM_NONREPARENTING=1
         '';
       };
 
