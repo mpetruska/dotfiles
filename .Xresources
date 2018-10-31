@@ -35,6 +35,7 @@ xterm*color15: rgb:ff/ff/ff
 xterm*rightScrollBar: false
 xterm*ScrollBar: false
 
-! stop output to terminal from jumping down to bottom of scroll again
-! xterm*scrollTtyOutput: false
+xterm*scrollTtyOutput: true
+
+XTerm*selectToClipboard: true
 
