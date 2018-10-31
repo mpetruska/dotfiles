@@ -1,0 +1,40 @@
+! Use a nice truetype font and size by default... 
+xterm*faceName: Inconsolata
+xterm*faceSize: 9
+
+! Every shell is a login shell by default (for inclusion of all necessary environment variables)
+xterm*loginshell: true
+
+! I like a LOT of scrollback...
+xterm*savelines: 300000
+
+! double-click to select whole URLs :D
+xterm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
+
+! Base16 Materia
+xterm*foreground: rgb:cd/d3/de
+xterm*background: rgb:26/32/38
+xterm*color0: rgb:26/32/38
+xterm*color1: rgb:ec/5f/67
+xterm*color2: rgb:8b/d6/49
+xterm*color3: rgb:ff/cc/00
+xterm*color4: rgb:89/dd/ff
+xterm*color5: rgb:82/aa/ff
+xterm*color6: rgb:80/cb/c4
+xterm*color7: rgb:cd/d3/de
+xterm*color8: rgb:70/78/80
+xterm*color9: rgb:ec/5f/67
+xterm*color10: rgb:8b/d6/49
+xterm*color11: rgb:ff/cc/00
+xterm*color12: rgb:89/dd/ff
+xterm*color13: rgb:82/aa/ff
+xterm*color14: rgb:80/cb/c4
+xterm*color15: rgb:ff/ff/ff
+
+! right hand side scrollbar...
+xterm*rightScrollBar: false
+xterm*ScrollBar: false
+
+! stop output to terminal from jumping down to bottom of scroll again
+! xterm*scrollTtyOutput: false
+

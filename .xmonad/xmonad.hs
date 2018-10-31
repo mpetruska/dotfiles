@@ -410,7 +410,8 @@ myWorkspaces = [ ws1
 
 --myTerminal          = "terminator"
 --myTerminalClass     = "Terminator"
-myTerminal          = "termite"
+--myTerminal          = "termite"
+myTerminal          = "xterm"
 myAltTerminal       = "cool-retro-term"
 myBrowser           = "firefox"
 myBrowserClass      = "Firefox"
@@ -1520,7 +1521,7 @@ myMouseBindings (XConfig {XMonad.modMask = myModMask}) = M.fromList $ []
 
 myStartupHook = do
 
-    spawnNOnOnce 2 ws1 "termite"
+    spawnNOnOnce 2 ws1 "xterm"
     spawnOnOnce    ws2 "emacs"
     spawnOnOnce    ws3 "firefox"
     spawnOnOnce    ws4 "slack"
