@@ -1,11 +1,8 @@
-! Use a nice truetype font and size by default... 
 xterm*faceName: Inconsolata
 xterm*faceSize: 9
 
-! Every shell is a login shell by default (for inclusion of all necessary environment variables)
 xterm*loginshell: true
 
-! I like a LOT of scrollback...
 xterm*savelines: 300000
 
 ! double-click to select whole URLs :D
@@ -31,11 +28,14 @@ xterm*color13: rgb:82/aa/ff
 xterm*color14: rgb:80/cb/c4
 xterm*color15: rgb:ff/ff/ff
 
-! right hand side scrollbar...
 xterm*rightScrollBar: false
 xterm*ScrollBar: false
 
 xterm*scrollTtyOutput: true
 
 XTerm*selectToClipboard: true
+
+XTerm*VT100*translations: #override \n\
+    Ctrl Shift <Key>V:  insert-selection(CLIPBOARD) \n\
+    Ctrl Shift <Key>C:        select-end(CLIPBOARD)
 

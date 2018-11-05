@@ -13,10 +13,10 @@ nix-env -iA nixos.firefox nixos.termite nixos.ranger nixos.slack \
 # Media
 
 nix-env -iA nixos.mplayer nixos.youtubeDL nixos.python36Packages.mps-youtube \
-	nixos.asciinema nixos.w3m nixos.libcaca
+	nixos.asciinema nixos.w3m nixos.libcaca nixos.vokoscreen
 
 # Development
 
 nix-env -iA nixos.atom nixos.docker nixos.git nixos.sbt nixos.scala \
 	nixos.emacs nixos.jetbrains.idea-community nixos.vagrant \
-	nixos.dbeaver nixos.nodejs nixos.yarn
+	nixos.dbeaver nixos.nodejs nixos.yarn nixos.figlet
