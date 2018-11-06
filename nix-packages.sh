@@ -13,7 +13,7 @@ nix-env -iA nixos.firefox nixos.termite nixos.ranger nixos.slack \
 # Media
 
 nix-env -iA nixos.mplayer nixos.youtubeDL nixos.python36Packages.mps-youtube \
-	nixos.asciinema nixos.w3m nixos.libcaca nixos.vokoscreen
+	nixos.asciinema nixos.w3m nixos.libcaca nixos.vokoscreen nixos.mimic
 
 # Development
 
