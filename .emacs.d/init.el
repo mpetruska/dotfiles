@@ -10,13 +10,14 @@
   "Load a file in current user's configuration directory"
   (load-file (expand-file-name file user-init-dir)))
 
-(load-user-file           "global.el")
-(load-user-file        "dashboard.el")
-(load-user-file           "ensime.el")
-(load-user-file "multiple-cursors.el")
-(load-user-file          "neotree.el")
-(load-user-file       "projectile.el")
-(load-user-file    "visual-regexp.el")
+(load-user-file              "global.el")
+(load-user-file           "dashboard.el")
+(load-user-file "display-ansi-colors.el")
+(load-user-file              "ensime.el")
+(load-user-file    "multiple-cursors.el")
+(load-user-file             "neotree.el")
+(load-user-file          "projectile.el")
+(load-user-file       "visual-regexp.el")
 
 (use-package base16-theme
   :ensure t)
