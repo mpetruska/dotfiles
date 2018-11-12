@@ -1521,7 +1521,7 @@ myMouseBindings (XConfig {XMonad.modMask = myModMask}) = M.fromList $ []
 
 myStartupHook = do
 
-    spawnNOnOnce 2 ws1 "xterm"
+    spawnNOnOnce 3 ws1 "xterm"
     spawnOnOnce    ws2 "emacs"
     spawnOnOnce    ws3 "firefox"
     spawnOnOnce    ws4 "slack"
