@@ -1576,7 +1576,7 @@ myLogHook h = do
 
 myFadeHook = composeAll
     [ opaque -- default to opaque
-    , isUnfocused                                        --> opacity 0.75
+    , isUnfocused                                        --> opacity 0.85
     , (className =? "Firefox")                           --> opaque
     , (className =? "vlc")                               --> opaque
     -- , (className =? "Terminator")     <&&> (isUnfocused) --> opacity 0.9
