@@ -492,22 +492,25 @@ scratchpads =
 myFocusFollowsMouse  = False
 myClickJustFocuses   = False
 
-base03  = "#002b36"
-base02  = "#073642"
-base01  = "#586e75"
-base00  = "#657b83"
-base0   = "#839496"
-base1   = "#93a1a1"
-base2   = "#eee8d5"
-base3   = "#fdf6e3"
-yellow  = "#b58900"
-orange  = "#cb4b16"
-red     = "#dc322f"
-magenta = "#d33682"
-violet  = "#6c71c4"
-blue    = "#268bd2"
-cyan    = "#2aa198"
-green   = "#859900"
+base03      = "#002b36"
+base02      = "#073642"
+base01      = "#586e75"
+base00      = "#657b83"
+base0       = "#839496"
+base1       = "#93a1a1"
+base2       = "#eee8d5"
+base3       = "#fdf6e3"
+yellow      = "#b58900"
+orange      = "#cb4b16"
+red         = "#dc322f"
+magenta     = "#d33682"
+violet      = "#6c71c4"
+blue        = "#268bd2"
+cyan        = "#2aa198"
+green       = "#859900"
+limegreen   = "#32cd32"
+yellowgreen = "#91cd32"
+mintcream   = "#f5fffa"
 
 -- sizes
 gap    = 3
@@ -519,10 +522,10 @@ status = 20
 myNormalBorderColor     = "#000000"
 myFocusedBorderColor    = active
 
-active      = blue
-activeWarn  = red
-inactive    = base02
-focusColor  = blue
+active       = blue
+activeWarn   = red
+inactive     = base02
+focusColor   = blue
 unfocusColor = base02
 
 -- myFont      = "-*-terminus-medium-*-*-*-*-160-*-*-*-*-*-*"
@@ -585,7 +588,7 @@ hotPromptTheme = myPromptTheme
     , position              = Top
     }
 
-myShowWNameTheme = def
+myShowWNameTheme= def
     { swn_font              = myWideFont
     , swn_fade              = 0.5
     , swn_bgcolor           = "#000000"
@@ -1565,7 +1568,7 @@ myLogHook h = do
         , ppHiddenNoWindows     = const ""
         , ppSep                 = xmobarColor active "" "  :  "
         , ppWsSep               = " "
-        , ppLayout              = xmobarColor yellow ""
+        , ppLayout              = xmobarColor yellowgreen ""
         , ppOrder               = id
         , ppOutput              = hPutStrLn h
         , ppSort                = fmap
