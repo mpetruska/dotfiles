@@ -519,14 +519,15 @@ border = 0
 prompt = 20
 status = 20
 
-myNormalBorderColor     = "#000000"
-myFocusedBorderColor    = active
+myNormalBorderColor  = "#000000"
+myFocusedBorderColor = active
 
-active       = blue
-activeWarn   = red
-inactive     = base02
-focusColor   = blue
-unfocusColor = base02
+active          = blue
+activeWarn      = red
+inactive        = base02
+focusColor      = blue
+unfocusColor    = base02
+layoutTextColor = green
 
 -- myFont      = "-*-terminus-medium-*-*-*-*-160-*-*-*-*-*-*"
 -- myBigFont   = "-*-terminus-medium-*-*-*-*-240-*-*-*-*-*-*"
@@ -1568,7 +1569,7 @@ myLogHook h = do
         , ppHiddenNoWindows     = const ""
         , ppSep                 = xmobarColor active "" "  :  "
         , ppWsSep               = " "
-        , ppLayout              = xmobarColor yellowgreen ""
+        , ppLayout              = xmobarColor layoutTextColor ""
         , ppOrder               = id
         , ppOutput              = hPutStrLn h
         , ppSort                = fmap
