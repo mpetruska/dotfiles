@@ -2,6 +2,7 @@
 {
 
   allowUnfree = true;
+  oraclejdk.accept_license = true;
 
   packageOverrides = pkgs: rec {
   
