@@ -8,12 +8,13 @@ nix-channel --update
 nix-env -iA nixos.firefox nixos.termite nixos.ranger nixos.slack \
 	nixos.xorg.xkill nixos.skype nixos.dpkg nixos.openvpn \
 	nixos.lm_sensors nixos.postman nixos.kdeApplications.spectacle \
-	nixos.calc nixos.libreoffice nixos.unzip
+	nixos.calc nixos.libreoffice nixos.unzip nixos.lolcat \
+	nixos.cowsay
 
 # Media
 
 nix-env -iA nixos.mplayer nixos.youtubeDL nixos.python36Packages.mps-youtube \
-	nixos.asciinema nixos.w3m nixos.libcaca nixos.vokoscreen nixos.mimic \
+	nixos.asciinema nixos.w3m nixos.libcaca nixos.vokoscreen nixos.espeak \
 	nixos.cmus
 
 # Development
