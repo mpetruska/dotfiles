@@ -635,7 +635,7 @@ myLayoutHook = --showWorkspaceName
              $ fullBarToggle
              $ mirrorToggle
              $ reflectToggle
-             $ flex ||| tabs
+             $ flex ||| tabs ||| threeCol
                -- ||| Accordion ||| emptyBSP ||| Circle ||| Column (16/10) ||| simpleCross ||| Dishes 2 (1/6) ||| dragPane Horizontal (1/10) (1/2)
                -- ||| Dwindle Dwindle.R Dwindle.CW (3/2) (11/10) ||| Spiral Dwindle.L Dwindle.CW (3/2) (11/10) ||| Squeeze D (3/2) (11/10)
                -- ||| FixedColumn 1 20 80 10 ||| Grid.Grid ||| GridVariants.Grid (16/10) ||| GridVariants.SplitGrid GridVariants.L 2 3 (2/3) (16/10) (5/100)
@@ -1266,7 +1266,7 @@ myKeys conf = let
     --, ("M-m"                    , addName "NSP Music"                       $ namedScratchpadAction scratchpads "googleMusic")
     --, ("M-v"                    , addName "NSP Video"                       $ namedScratchpadAction scratchpads "plex")
     --, ("M1-x"                   , addName "NSP Xawtv"                       $ namedScratchpadAction scratchpads "xawtv")
-    , ("M-n"                    , addName "NSP Console"                     $ namedScratchpadAction scratchpads "console")
+    --, ("M-n"                    , addName "NSP Console"                     $ namedScratchpadAction scratchpads "console")
     --, ("M-s s"                  , addName "Cancel submap"                   $ return ())
     --, ("M-s M-s"                , addName "Cancel submap"                   $ return ())
     ] ^++^
@@ -1370,7 +1370,8 @@ myKeys conf = let
     , ("M-S-f"                  , addName "Fake fullscreen"             $ sequence_ [ (P.sendKey P.noModMask xK_F11)
                                                                                     , (tryMsgR (ExpandTowards Gaps.L) (Shrink))
                                                                                     , (tryMsgR (ExpandTowards Gaps.R) (Expand)) ])
-    , ("M-m"                    , addName "Detect screens"              $ spawn "/home/mark/.screenlayout/default.sh" )
+    , ("M-n"                    , addName "Laptop monitor only"       $ spawn "/home/mark/.screenlayout/laptoponly.sh")
+    , ("M-m"                    , addName "HDMI monitor"              $ spawn "/home/mark/.screenlayout/default.sh" )
     ] ^++^
 
     -----------------------------------------------------------------------
