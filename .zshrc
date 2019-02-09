@@ -15,13 +15,37 @@
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="lambda-gitster"
+# ZSH_THEME="arrow"
+# ZSH_THEME="awesomepanda"
+# ZSH_THEME="clean"
+# ZSH_THEME="cloud"
+# ZSH_THEME="fwalch"
+# ZSH_THEME="gozilla"
+# ZSH_THEME="gallois"
+# ZSH_THEME="kolo"
+# ZSH_THEME="lambda-gitster"
+# ZSH_THEME="mh"
+# ZSH_THEME="minimal"
+# ZSH_THEME="nanotech"
+# ZSH_THEME="norm"
+# ZSH_THEME="robbyrussell"
+# ZSH_THEME="sorin"
+# ZSH_THEME="sunrise"
+# ZSH_THEME="terminalparty"
+# ZSH_THEME="theunraveler"
+# ZSH_THEME="wedisagree"
+# ZSH_THEME="wezm"
+
+ZSH_THEME="random"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
 # If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+ZSH_THEME_RANDOM_CANDIDATES=( "arrow" "awesomepanda" "clean" "cloud" "fwalch" "gozilla" \
+			      "gallois" "kolo" "lambda-gitster" "mh" "minimal" "nanotech" \
+			      "norm" "robbyrussell" "sorin" "sunrise" "terminalparty" \
+			      "theunraveler" "wedisagree" "wezm" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
