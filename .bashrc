@@ -15,6 +15,14 @@ parse_git_directory() {
 
 export PS1="\W \[\033[32m\]\$(parse_git_directory)\[\033[00m\]\[\033[36m\]\$(parse_git_branch)\[\033[00m\] $ "
 
+# sbt options
+
+export SBT_OPTS="-Xms1024M -Xmx2048M -Xss4M -XX:MaxMetaspaceSize=2048M"
+
+# npm
+
+export PATH="node_modules/.bin:$PATH"
+
 # Local extensions
 
 if [ -f .bashrc_local ]; then

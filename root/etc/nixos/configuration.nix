@@ -99,6 +99,7 @@
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   programs.bash.enableCompletion = true;
+  programs.zsh.enable = true;
 
   # List services that you want to enable.
   services = {
@@ -207,6 +208,7 @@
     group        = "users";
     home         = "/home/mark";
     extraGroups  = [ "wheel" "networkmanager" "docker" "vboxusers" ];
+    shell        = pkgs.zsh;
   };
 
   # This value determines the NixOS release with which your system is to be
