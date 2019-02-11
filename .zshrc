@@ -21,6 +21,8 @@ if ! zgen saved; then
   zgen oh-my-zsh plugins/git
   zgen oh-my-zsh plugins/wd
   zgen load zsh-users/zsh-autosuggestions
+  zgen load mafredri/zsh-async
+  zgen load seletskiy/zsh-fuzzy-search-and-edit
 
   # themes
   zgen oh-my-zsh themes/arrow
@@ -31,7 +33,7 @@ if ! zgen saved; then
   zgen oh-my-zsh themes/gozilla
   zgen oh-my-zsh themes/gallois
   zgen oh-my-zsh themes/kolo
-  #zgen load ergenekonyigit/lambda-gitster
+  # zgen load ergenekonyigit/lambda-gitster
   zgen oh-my-zsh themes/mh
   zgen oh-my-zsh themes/minimal
   zgen oh-my-zsh themes/nanotech
@@ -45,6 +47,9 @@ if ! zgen saved; then
   zgen oh-my-zsh themes/wezm
 
   zgen oh-my-zsh
+
+  # bindings
+  bindkey '^P' fuzzy-search-and-edit
 
   # generate the init script from plugins above
   zgen save
