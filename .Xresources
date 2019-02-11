@@ -1,6 +1,6 @@
 ! xterm
 
-xterm*faceName: Inconsolata
+xterm*faceName: Inconsolata for Powerline, Medium
 xterm*faceSize: 9
 
 xterm*loginshell: true
