@@ -1,3 +1,4 @@
+
 (defconst user-init-dir
   (cond ((boundp 'user-emacs-directory)
 	  user-emacs-directory)
@@ -14,6 +15,7 @@
 (load-user-file           "dashboard.el")
 (load-user-file "display-ansi-colors.el")
 (load-user-file              "ensime.el")
+(load-user-file        "haskell-mode.el")
 (load-user-file    "multiple-cursors.el")
 (load-user-file             "neotree.el")
 (load-user-file          "projectile.el")

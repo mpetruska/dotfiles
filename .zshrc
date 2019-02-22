@@ -23,6 +23,7 @@ if ! zgen saved; then
   zgen load zsh-users/zsh-autosuggestions
   zgen load mafredri/zsh-async
   zgen load seletskiy/zsh-fuzzy-search-and-edit
+  zgen load wfxr/forgit
 
   # themes
   zgen oh-my-zsh themes/arrow
@@ -48,12 +49,12 @@ if ! zgen saved; then
 
   zgen oh-my-zsh
 
-  # bindings
-  bindkey '^P' fuzzy-search-and-edit
-
   # generate the init script from plugins above
   zgen save
 fi
+
+# key bindings
+bindkey '^P' fuzzy-search-and-edit
 
 #  _              _                        __ _                       _   _
 # | |_ ___   ___ | |___    ___ ___  _ __  / _(_) __ _ _   _ _ __ __ _| |_(_) ___  _ __
