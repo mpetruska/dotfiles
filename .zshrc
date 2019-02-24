@@ -75,3 +75,6 @@ export SBT_OPTS="-Xms1024M -Xmx2048M -Xss4M -XX:MaxMetaspaceSize=2048M"
 
 export PATH="node_modules/.bin:$PATH"
 
+# local bin
+
+export PATH="${HOME}/.local/bin:$PATH"
