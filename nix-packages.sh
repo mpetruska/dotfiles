@@ -10,7 +10,7 @@ nix-env -iA nixos.firefox nixos.termite nixos.ranger nixos.slack \
 	nixos.lm_sensors nixos.postman nixos.kdeApplications.spectacle \
 	nixos.calc nixos.libreoffice nixos.unzip nixos.lolcat \
         nixos.cowsay nixos.fzf nixos.commonsCompress nixos.ncdu \
-        nixos.python36Packages.glances
+        nixos.python36Packages.glances nixos.chkrootkit
 
 # Media
 
