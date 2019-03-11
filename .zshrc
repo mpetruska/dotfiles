@@ -67,10 +67,6 @@ bindkey '^P' fuzzy-search-and-edit
 
 export EDITOR=vim
 
-# sbt options
-
-export SBT_OPTS="-Xms1024M -Xmx2048M -Xss4M -XX:MaxMetaspaceSize=2048M"
-
 # npm
 
 export PATH="node_modules/.bin:$PATH"
