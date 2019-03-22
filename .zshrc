@@ -71,6 +71,7 @@ export EDITOR=vim
 
 export PATH="node_modules/.bin:$PATH"
 
-# local bin
+# Haskell Stack
 
 export PATH="${HOME}/.local/bin:$PATH"
+
