@@ -1477,8 +1477,12 @@ myKeys conf = let
     ] ^++^
 
     subKeys "Laptop Controls"
-    [ ("<XF86MonBrightnessUp>"   , addName "Brightness up"               $ spawn "xbacklight + 1")
-    , ("<XF86MonBrightnessDown>" , addName "Brightness down"             $ spawn "xbacklight - 1")
+    -- xbacklight is broken at the moment
+    --[ ("<XF86MonBrightnessUp>"   , addName "Brightness up"               $ spawn "xbacklight + 1")
+    --, ("<XF86MonBrightnessDown>" , addName "Brightness down"             $ spawn "xbacklight - 1")
+    --]
+    [ ("<XF86MonBrightnessUp>"   , addName "Brightness up"               $ spawn "echo $((`cat /sys/class/backlight/intel_backlight/brightness` + 50)) | tee /sys/class/backlight/intel_backlight/brightness")
+    , ("<XF86MonBrightnessDown>" , addName "Brightness down"             $ spawn "echo $((`cat /sys/class/backlight/intel_backlight/brightness` - 50)) | tee /sys/class/backlight/intel_backlight/brightness")
     ]
 
     where
