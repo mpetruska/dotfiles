@@ -74,3 +74,4 @@ export PATH="node_modules/.bin:$PATH"
 # Haskell Stack
 
 export PATH="${HOME}/.local/bin:$PATH"
+
