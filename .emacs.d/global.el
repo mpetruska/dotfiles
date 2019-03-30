@@ -10,7 +10,8 @@
   package-archives '(("gnu"          . "http://elpa.gnu.org/packages/")
                      ("org"          . "http://orgmode.org/elpa/")
                      ("melpa"        . "http://melpa.org/packages/")
-                     ("melpa-stable" . "http://stable.melpa.org/packages/"))
+                     ("melpa-stable" . "http://stable.melpa.org/packages/")
+		     ("org"          . "https://orgmode.org/elpa/"))
   package-archive-priorities '(("melpa-stable" . 1)))
 
 (package-initialize)

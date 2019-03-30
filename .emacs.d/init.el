@@ -18,11 +18,15 @@
 (load-user-file        "haskell-mode.el")
 (load-user-file    "multiple-cursors.el")
 (load-user-file             "neotree.el")
+(load-user-file            "org-mode.el")
 (load-user-file          "projectile.el")
 (load-user-file       "visual-regexp.el")
 
 (use-package base16-theme
   :ensure t)
+
+(progn
+  (setq-default indent-tabs-mode nil))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
