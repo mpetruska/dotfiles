@@ -2,4 +2,7 @@
 (use-package dashboard
   :ensure t
   :config
-  (dashboard-setup-startup-hook))
+  (progn
+    (dashboard-setup-startup-hook)
+    (setq show-week-agenda-p t)
+  ))
