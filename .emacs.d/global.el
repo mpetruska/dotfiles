@@ -4,6 +4,9 @@
 (tool-bar-mode -1)
 (global-display-line-numbers-mode)
 (setq inhibit-startup-screen t)
+(setq-default indent-tabs-mode nil)
+(set-default 'truncate-lines t)
+(global-set-key "\C-c$" 'toggle-truncate-lines)
 
 (require 'package)
 (setq

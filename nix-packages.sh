@@ -11,13 +11,13 @@ nix-env -iA nixos.firefox nixos.termite nixos.ranger nixos.slack \
 	nixos.calc nixos.libreoffice nixos.unzip nixos.lolcat \
         nixos.cowsay nixos.fzf nixos.commonsCompress nixos.ncdu \
         nixos.python36Packages.glances nixos.chkrootkit nixos.rstudio \
-	nixos.ammonite
+	nixos.ammonite nixos.gnuplot
 
 # Media
 
 nix-env -iA nixos.mplayer nixos.youtubeDL nixos.python36Packages.mps-youtube \
 	nixos.asciinema nixos.w3m nixos.libcaca nixos.vokoscreen nixos.espeak \
-	nixos.cmus nixos.powerline-fonts
+	nixos.cmus nixos.powerline-fonts nixos.tetex
 
 # Development
 
