@@ -43,7 +43,7 @@
     ("02199888a97767d7779269a39ba2e641d77661b31b3b8dd494b1a7250d1c8dc1" "d9dab332207600e49400d798ed05f38372ec32132b3f7d2ba697e59088021555" default)))
  '(org-agenda-files
    (quote
-    ("~/GitLab/org/meetings/2019-04-09-Uniqa-2019-Q1-accountancy.org" "/home/mark/GitLab/org/archive.org" "/home/mark/GitLab/org/bookmarks.org" "/home/mark/GitLab/org/off-work.org" "/home/mark/GitLab/org/work.org")))
+    ("/home/mark/GitLab/org/archive.org" "/home/mark/GitLab/org/bookmarks.org" "/home/mark/GitLab/org/off-work.org" "/home/mark/GitLab/org/work.org")))
  '(package-selected-packages
    (quote
     (use-package neotree liso-theme borland-blue-theme base16-theme all-the-icons afternoon-theme))))
