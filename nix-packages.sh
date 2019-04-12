@@ -24,4 +24,4 @@ nix-env -iA nixos.mplayer nixos.youtubeDL nixos.python36Packages.mps-youtube \
 nix-env -iA nixos.atom nixos.docker nixos.git nixos.sbt nixos.scala \
 	nixos.emacs nixos.jetbrains.idea-community nixos.vagrant \
 	nixos.dbeaver nixos.nodejs nixos.yarn nixos.figlet nixos.gnumake \
-	nixos.jq nixos.telnet nixos.stack nixos.cloc
+	nixos.jq nixos.telnet nixos.stack nixos.cloc nixos.swiProlog

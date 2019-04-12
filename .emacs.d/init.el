@@ -20,6 +20,7 @@
 (load-user-file             "neotree.el")
 (load-user-file            "org-mode.el")
 (load-user-file          "projectile.el")
+(load-user-file         "prolog-mode.el")
 (load-user-file       "visual-regexp.el")
 (load-user-file          "win-switch.el")
 
