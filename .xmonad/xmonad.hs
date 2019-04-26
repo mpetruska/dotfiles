@@ -470,9 +470,9 @@ myLauncher          = "dmenu_run"
 --plexResource        = "crx_fpniocchabmgenibceglhnfeimmdhdfm"
 --isPlex              = (resource =? plexResource)
 
-isConsole           = (className =? "Gnome-terminal")
-                 <&&> (stringProperty "WM_WINDOW_ROLE" =? "Scratchpad")
-myConsole           = "gnome-terminal -T console -p console --role=Scratchpad"
+scratchXTerm x  = "xterm -bd black -class " ++ x
+scratchTerminal = scratchXTerm "nspConsole"
+scratchRanger   = scratchXTerm "nspRanger" ++ " ranger"
 
 scratchpads =
     [ --  (NS "hangoutsPersonal"  hangoutsCommand isPersonalHangouts defaultFloating)
@@ -481,8 +481,9 @@ scratchpads =
     --,   (NS "trelloWork"  trelloWorkCommand isTrelloWork nonFloating)
     --,   (NS "googleMusic"  googleMusicCommand isGoogleMusic nonFloating)
     --,   (NS "plex"  plexCommand isPlex defaultFloating)
-        (NS "console"  myConsole isConsole nonFloating)
     --,   (NS "xawtv" "xawtv" (resource =? "xawtv") (customFloating $ W.RationalRect (2/3) (1/6) (1/5) (1/3)) )
+      (NS "console"  scratchTerminal (className =? "nspConsole") (customFloating $ W.RationalRect (1/64) (1/64) (7/8) (7/8)) )
+    , (NS "ranger"   scratchRanger   (className =? "nspRanger" ) (customFloating $ W.RationalRect (1/32) (1/32) (7/8) (7/8)) )
     ]
 
 ------------------------------------------------------------------------}}}
@@ -1266,7 +1267,8 @@ myKeys conf = let
     --, ("M-m"                    , addName "NSP Music"                       $ namedScratchpadAction scratchpads "googleMusic")
     --, ("M-v"                    , addName "NSP Video"                       $ namedScratchpadAction scratchpads "plex")
     --, ("M1-x"                   , addName "NSP Xawtv"                       $ namedScratchpadAction scratchpads "xawtv")
-    --, ("M-n"                    , addName "NSP Console"                     $ namedScratchpadAction scratchpads "console")
+    , ("M-C-'"                    , addName "NSP Console"                     $ namedScratchpadAction scratchpads "console")
+    , ("M-C-;"                    , addName "NSP Ranger"                      $ namedScratchpadAction scratchpads "ranger")
     --, ("M-s s"                  , addName "Cancel submap"                   $ return ())
     --, ("M-s M-s"                , addName "Cancel submap"                   $ return ())
     ] ^++^
