@@ -7,6 +7,7 @@
 (setq-default indent-tabs-mode nil)
 (set-default 'truncate-lines t)
 (global-set-key "\C-c$" 'toggle-truncate-lines)
+(setq browse-url-browser-function 'eww-browse-url)
 
 (require 'package)
 (setq
