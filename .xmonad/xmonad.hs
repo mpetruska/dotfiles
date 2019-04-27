@@ -470,10 +470,11 @@ myLauncher          = "dmenu_run"
 --plexResource        = "crx_fpniocchabmgenibceglhnfeimmdhdfm"
 --isPlex              = (resource =? plexResource)
 
-scratchXTerm x  = "xterm -bd black -class " ++ x
-scratchTerminal = scratchXTerm "nspConsole"
-scratchRanger   = scratchXTerm "nspRanger" ++ " ranger"
-scratchCmus     = scratchXTerm "nspCmus"   ++ " cmus"
+scratchXTerm x     = "xterm -bd black -class " ++ x
+scratchTerminal    = scratchXTerm "nspConsole"
+scratchRanger      = scratchXTerm "nspRanger" ++ " ranger"
+scratchCmus        = scratchXTerm "nspCmus"   ++ " cmus"
+scratchThunderbird = "thunderbird"
 
 scratchpads =
     [ --  (NS "hangoutsPersonal"  hangoutsCommand isPersonalHangouts defaultFloating)
@@ -483,9 +484,10 @@ scratchpads =
     --,   (NS "googleMusic"  googleMusicCommand isGoogleMusic nonFloating)
     --,   (NS "plex"  plexCommand isPlex defaultFloating)
     --,   (NS "xawtv" "xawtv" (resource =? "xawtv") (customFloating $ W.RationalRect (2/3) (1/6) (1/5) (1/3)) )
-      (NS "console"  scratchTerminal (className =? "nspConsole") (customFloating $ W.RationalRect (1/64) (1/64) (7/8) (7/8)) )
-    , (NS "ranger"   scratchRanger   (className =? "nspRanger" ) (customFloating $ W.RationalRect (2/63) (2/64) (7/8) (7/8)) )
-    , (NS "cmus"     scratchCmus     (className =? "nspCmus"   ) (customFloating $ W.RationalRect (3/64) (3/64) (7/8) (7/8)) )
+      (NS "console"     scratchTerminal    (className =? "nspConsole") (customFloating $ W.RationalRect (1/64) (1/64) (7/8) (7/8)) )
+    , (NS "ranger"      scratchRanger      (className =? "nspRanger" ) (customFloating $ W.RationalRect (2/63) (2/64) (7/8) (7/8)) )
+    , (NS "cmus"        scratchCmus        (className =? "nspCmus"   ) (customFloating $ W.RationalRect (3/64) (3/64) (7/8) (7/8)) )
+    , (NS "thunderbird" scratchThunderbird (className =? "Daily"     ) (customFloating $ W.RationalRect (4/64) (4/64) (7/8) (7/8)) )
     ]
 
 ------------------------------------------------------------------------}}}
@@ -1272,6 +1274,7 @@ myKeys conf = let
     , ("M-C-'"                    , addName "NSP console"                     $ namedScratchpadAction scratchpads "console")
     , ("M-C-;"                    , addName "NSP ranger"                      $ namedScratchpadAction scratchpads "ranger")
     , ("M-C-c"                    , addName "NSP cmus"                        $ namedScratchpadAction scratchpads "cmus")
+    , ("M-C-m"                    , addName "NSP thunderbird"                 $ namedScratchpadAction scratchpads "thunderbird")
     --, ("M-s s"                  , addName "Cancel submap"                   $ return ())
     --, ("M-s M-s"                , addName "Cancel submap"                   $ return ())
     ] ^++^
