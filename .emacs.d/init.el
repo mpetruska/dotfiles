@@ -49,5 +49,5 @@
     ("/home/mark/GitLab/org/archive.org" "/home/mark/GitLab/org/bookmarks.org" "/home/mark/GitLab/org/off-work.org" "/home/mark/GitLab/org/work.org")))
  '(package-selected-packages
    (quote
-    (proof-general use-package neotree liso-theme borland-blue-theme base16-theme all-the-icons afternoon-theme))))
+    (use-package neotree liso-theme borland-blue-theme base16-theme all-the-icons afternoon-theme))))
 

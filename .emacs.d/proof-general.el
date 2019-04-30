@@ -1,5 +1,5 @@
 
 (use-package proof-general
-  :no-require t
   :ensure t
-  :pin melpa-stable)
+  :pin melpa
+  :config (setq coq-prog-name "/home/mark/.opam/ocaml-base-compiler/bin/coqtop"))
