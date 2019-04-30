@@ -75,3 +75,6 @@ export PATH="node_modules/.bin:$PATH"
 
 export PATH="${HOME}/.local/bin:$PATH"
 
+# opam configuration
+
+test -r /home/mark/.opam/opam-init/init.zsh && . /home/mark/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true

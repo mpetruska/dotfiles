@@ -21,6 +21,7 @@
 (load-user-file            "org-mode.el")
 (load-user-file          "projectile.el")
 (load-user-file         "prolog-mode.el")
+(load-user-file       "proof-general.el")
 (load-user-file                 "shr.el")
 (load-user-file       "visual-regexp.el")
 (load-user-file          "win-switch.el")
@@ -48,5 +49,5 @@
     ("/home/mark/GitLab/org/archive.org" "/home/mark/GitLab/org/bookmarks.org" "/home/mark/GitLab/org/off-work.org" "/home/mark/GitLab/org/work.org")))
  '(package-selected-packages
    (quote
-    (use-package neotree liso-theme borland-blue-theme base16-theme all-the-icons afternoon-theme))))
+    (proof-general use-package neotree liso-theme borland-blue-theme base16-theme all-the-icons afternoon-theme))))
 
