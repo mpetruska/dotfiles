@@ -1273,7 +1273,7 @@ myKeys conf = let
     --, ("M1-x"                   , addName "NSP Xawtv"                       $ namedScratchpadAction scratchpads "xawtv")
     , ("M-C-'"                    , addName "NSP console"                     $ namedScratchpadAction scratchpads "console")
     , ("M-C-;"                    , addName "NSP ranger"                      $ namedScratchpadAction scratchpads "ranger")
-    , ("M-C-c"                    , addName "NSP cmus"                        $ namedScratchpadAction scratchpads "cmus")
+    , ("M-C-n"                    , addName "NSP cmus"                        $ namedScratchpadAction scratchpads "cmus")
     , ("M-C-m"                    , addName "NSP thunderbird"                 $ namedScratchpadAction scratchpads "thunderbird")
     --, ("M-s s"                  , addName "Cancel submap"                   $ return ())
     --, ("M-s M-s"                , addName "Cancel submap"                   $ return ())
