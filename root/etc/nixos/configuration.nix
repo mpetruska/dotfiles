@@ -12,7 +12,6 @@
   # Boot settings.
   boot = {
 
-    # some driver issues with kernel 4.19
     kernelPackages = pkgs.linuxPackages_4_14;
 
     initrd = {
@@ -200,7 +199,17 @@
 
   # Enable sound.
   sound.enable = true;
-  hardware.pulseaudio.enable = true;
+
+  hardware.pulseaudio = {
+    enable = true;
+
+    # Extra bluetooth profiles
+    extraModules = [ pkgs.pulseaudio-modules-bt ];
+
+    # NixOS allows either a lightweight build (default) or full build of PulseAudio to be installed.
+    # Only the full build has Bluetooth support, so it must be selected here.
+    package = pkgs.pulseaudioFull;
+  };
 
   # Bluetooth
   hardware.bluetooth.enable = true;
