@@ -187,7 +187,15 @@
       timeout = 1;
     };
 
+    gnome3 = {
+      gnome-keyring.enable = true;
+      seahorse.enable      = true;
+      at-spi2-core.enable  = true;
+    };
+
   };
+
+  security.pam.services.sddm.enableGnomeKeyring = true;
 
   # Virtualization stuff
   virtualisation = {
@@ -199,7 +207,7 @@
 
   # Enable sound.
   sound.enable = true;
-
+  
   hardware.pulseaudio = {
     enable = true;
 
