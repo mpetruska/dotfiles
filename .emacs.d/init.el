@@ -26,21 +26,28 @@
 (load-user-file       "visual-regexp.el")
 (load-user-file          "win-switch.el")
 
-(use-package base16-theme
-  :ensure t)  
+;;(use-package base16-theme
+;;  :ensure t)
+
+(use-package night-owl-theme
+  :ensure t)
+
+;;(load-theme 'night-owl-theme t)
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Fira Code" :foundry "CYRE" :slant normal :weight normal :height 77 :width normal)))))
+ ;;'(default ((t (:family "Fira Code" :foundry "CYRE" :slant normal :weight normal :height 77 :width normal)))))
+ '(default ((t (:family "Hack" :foundry "CYRE" :slant normal :weight normal :height 77 :width normal)))))
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-enabled-themes (quote (base16-materia)))
+ ;;'(custom-enabled-themes (quote (base16-materia)))
+ '(custom-enabled-themes (quote (night-owl-theme)))
  '(custom-safe-themes
    (quote
     ("02199888a97767d7779269a39ba2e641d77661b31b3b8dd494b1a7250d1c8dc1" "d9dab332207600e49400d798ed05f38372ec32132b3f7d2ba697e59088021555" default)))
