@@ -6,13 +6,12 @@ nix-channel --update
 # Applications
 
 nix-env -iA nixos.firefox nixos.termite nixos.ranger nixos.slack \
-	nixos.xorg.xkill nixos.skype nixos.dpkg nixos.openvpn \
-	nixos.lm_sensors nixos.postman nixos.kdeApplications.spectacle \
-	nixos.calc nixos.libreoffice nixos.unzip nixos.lolcat \
+        nixos.xorg.xkill nixos.skype nixos.dpkg nixos.openvpn \
+        nixos.lm_sensors nixos.postman nixos.kdeApplications.spectacle \
+        nixos.calc nixos.libreoffice nixos.unzip nixos.lolcat \
         nixos.cowsay nixos.fzf nixos.commonsCompress nixos.ncdu \
         nixos.python36Packages.glances nixos.chkrootkit nixos.rstudio \
-	nixos.ammonite nixos.gnuplot nixos.zip nixos.thunderbird \
-        nixos.protonmail-bridge
+        nixos.ammonite nixos.gnuplot nixos.zip nixos.thunderbird
 
 # Media
 
