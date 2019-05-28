@@ -1,7 +1,7 @@
 ! xterm
 
-xterm*faceName: Inconsolata for Powerline, Medium
-xterm*faceSize: 9
+xterm*faceName: Hack for Powerline, Medium
+xterm*faceSize: 8
 
 xterm*loginshell: true
 
