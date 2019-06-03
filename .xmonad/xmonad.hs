@@ -470,10 +470,10 @@ myLauncher          = "dmenu_run"
 --plexResource        = "crx_fpniocchabmgenibceglhnfeimmdhdfm"
 --isPlex              = (resource =? plexResource)
 
-scratchXTerm x     = "xterm -bd black -class " ++ x
+scratchXTerm x     = "xterm -bd black -ls -class " ++ x
 scratchTerminal    = scratchXTerm "nspConsole"
-scratchRanger      = scratchXTerm "nspRanger" ++ " ranger"
-scratchCmus        = scratchXTerm "nspCmus"   ++ " cmus"
+scratchRanger      = scratchXTerm "nspRanger"  ++ " -e zsh -l -c \"EDITOR=vim ranger\""
+scratchCmus        = scratchXTerm "nspCmus"    ++ " -e cmus"
 scratchThunderbird = "thunderbird"
 
 scratchpads =
