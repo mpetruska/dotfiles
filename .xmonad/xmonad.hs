@@ -1542,7 +1542,7 @@ myStartupHook = do
     spawnOnOnce    ws2 "emacs"
     spawnOnOnce    ws3 "firefox"
     spawnOnOnce    ws4 "slack"
-    spawnOnOnce    ws4 "skypeforlinux"
+    --spawnOnOnce    ws4 "skypeforlinux"
 
     setDefaultCursor xC_left_ptr
 
