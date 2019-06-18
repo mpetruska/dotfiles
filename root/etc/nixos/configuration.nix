@@ -23,6 +23,8 @@
     loader.systemd-boot.enable = true;
     loader.efi.canTouchEfiVariables = true;
 
+    extraModulePackages = [ config.boot.kernelPackages.exfat-nofuse ];
+
   };
 
   # Enable networking.
