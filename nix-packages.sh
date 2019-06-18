@@ -12,13 +12,13 @@ nix-env -iA nixos.firefox nixos.termite nixos.ranger nixos.slack \
         nixos.cowsay nixos.fzf nixos.commonsCompress nixos.ncdu \
         nixos.python36Packages.glances nixos.chkrootkit nixos.rstudio \
         nixos.ammonite nixos.gnuplot nixos.zip nixos.thunderbird \
-        nixpkgs.protonmail-bridge
+        nixpkgs.protonmail-bridge nixos.f3
 
 # Media
 
 nix-env -iA nixos.mplayer nixos.youtubeDL nixos.python36Packages.mps-youtube \
 	nixos.asciinema nixos.w3m nixos.libcaca nixos.vokoscreen nixos.espeak \
-	nixos.cmus nixos.powerline-fonts nixos.tetex nixos.lsof
+	nixos.cmus nixos.powerline-fonts nixos.tetex nixos.lsof nixos.ffmpeg-full
 
 # Development
 
