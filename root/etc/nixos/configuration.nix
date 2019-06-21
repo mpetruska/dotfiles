@@ -154,6 +154,7 @@
         lxqt         .enable = false;
         mate         .enable = false;
         maxx         .enable = false;
+        pantheon     .enable = false;
         plasma5      .enable = true;
         xfce         .enable = false;
         xterm        .enable = true;
