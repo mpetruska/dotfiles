@@ -83,7 +83,7 @@ test -r /home/mark/.opam/opam-init/init.zsh && . /home/mark/.opam/opam-init/init
 
 wttr()
 {
-  local request="wttr.in?2Fq"
+  local request="wttr.in/$1?2Fq"
   [ "$COLUMNS" -lt 125 ] && request+='n'
   curl --compressed "$request"
 }
