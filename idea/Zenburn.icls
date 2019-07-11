@@ -1,10 +1,10 @@
-<scheme name="Zenburn" version="142" parent_scheme="Default">
+<scheme name="MyZenburn" version="142" parent_scheme="Default">
   <metaInfo>
-    <property name="created">2019-07-11T10:09:47</property>
+    <property name="created">2019-07-11T12:36:54</property>
     <property name="ide">Idea</property>
     <property name="ideVersion">2019.1.1.0.0</property>
-    <property name="modified">2019-07-11T10:10:00</property>
-    <property name="originalScheme">Zenburn</property>
+    <property name="modified">2019-07-11T12:37:07</property>
+    <property name="originalScheme">MyZenburn</property>
   </metaInfo>
   <colors>
     <option name="ADDED_LINES_COLOR" value="295622" />
@@ -117,6 +117,13 @@
       <value>
         <option name="FOREGROUND" value="7f9f7f" />
         <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="CTRL_CLICKABLE">
+      <value>
+        <option name="FOREGROUND" value="287bde" />
+        <option name="EFFECT_COLOR" value="287bde" />
+        <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
     <option name="CUSTOM_INVALID_STRING_ESCAPE_ATTRIBUTES">
@@ -578,6 +585,12 @@
     <option name="WRONG_REFERENCES_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="bc3f3c" />
+      </value>
+    </option>
+    <option name="XML_ATTRIBUTE_NAME">
+      <value>
+        <option name="FOREGROUND" value="287bde" />
+        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
   </attributes>
