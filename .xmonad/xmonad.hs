@@ -214,6 +214,7 @@ import XMonad.Layout.Reflect
 import XMonad.Layout.Renamed
 import XMonad.Layout.ResizableTile          -- Resizable Horizontal border
 import XMonad.Layout.ShowWName
+import XMonad.Layout.SimpleDecoration
 import XMonad.Layout.Simplest
 import XMonad.Layout.SimplestFloat
 import XMonad.Layout.Spacing                -- this makes smart space around windows
@@ -517,6 +518,9 @@ limegreen   = "#32cd32"
 yellowgreen = "#91cd32"
 mintcream   = "#f5fffa"
 
+zenburn_background = "#3f3f3f"
+zenburn_blue       = "#6ca0a3"
+
 -- sizes
 gap    = 3
 topbar = 10
@@ -527,11 +531,11 @@ status = 20
 myNormalBorderColor  = "#000000"
 myFocusedBorderColor = active
 
-active          = blue
+-- active          = blue
+active          = zenburn_blue
 activeWarn      = red
-inactive        = base02
-focusColor      = blue
-unfocusColor    = base02
+-- inactive        = base02
+inactive        = zenburn_background
 layoutTextColor = green
 
 -- myFont      = "-*-terminus-medium-*-*-*-*-160-*-*-*-*-*-*"
@@ -594,7 +598,7 @@ hotPromptTheme = myPromptTheme
     , position              = Top
     }
 
-myShowWNameTheme= def
+myShowWNameTheme = def
     { swn_font              = myWideFont
     , swn_fade              = 0.5
     , swn_bgcolor           = "#000000"
@@ -669,6 +673,7 @@ myLayoutHook = --showWorkspaceName
                                    (XMonad.Layout.Renamed.AppendWords n)]
 
     addTopBar           = noFrillsDeco shrinkText topBarTheme
+    -- addTopBar           = simpleDeco shrinkText topBarTheme
 
     mySpacing           = spacing gap
     sGap                = quot gap 2
@@ -1575,7 +1580,7 @@ myLogHook h = do
     dynamicLogWithPP $ def
 
         { ppCurrent             = xmobarColor active "" . wrap "[" "]"
-        , ppTitle               = xmobarColor active "" . shorten 50
+        , ppTitle               = xmobarColor active "" . shorten 70
         , ppVisible             = xmobarColor base0  "" . wrap "(" ")"
         , ppUrgent              = xmobarColor red    "" . wrap " " " "
         , ppHidden              = check
