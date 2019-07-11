@@ -55,7 +55,8 @@ xterm*color14: #93e0e3
 xterm*color15: #ffffff
 
 xterm*colorInnerBorder: true
-xterm*borderColor: rgb:26/32/38
+! xterm*borderColor: rgb:26/32/38
+xterm*borderColor: #3f3f3f
 
 xterm*rightScrollBar: false
 xterm*ScrollBar: false
