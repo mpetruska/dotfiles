@@ -1,9 +1,9 @@
 <scheme name="MyZenburn" version="142" parent_scheme="Default">
   <metaInfo>
-    <property name="created">2019-07-23T12:37:19</property>
+    <property name="created">2019-07-23T12:52:58</property>
     <property name="ide">Idea</property>
     <property name="ideVersion">2019.1.1.0.0</property>
-    <property name="modified">2019-07-23T12:37:30</property>
+    <property name="modified">2019-07-23T12:53:09</property>
     <property name="originalScheme">MyZenburn</property>
   </metaInfo>
   <colors>
@@ -26,7 +26,7 @@
     <option name="FILESTATUS_addedOutside" value="629755" />
     <option name="FILESTATUS_changelistConflict" value="d5756c" />
     <option name="FILESTATUS_modifiedOutside" value="6897bb" />
-    <option name="GUTTER_BACKGROUND" value="404040" />
+    <option name="GUTTER_BACKGROUND" value="494949" />
     <option name="INDENT_GUIDE" value="898941" />
     <option name="LINE_NUMBERS_COLOR" value="c0c0c0" />
     <option name="METHOD_SEPARATORS_COLOR" value="505050" />
