@@ -1,9 +1,9 @@
 <scheme name="MyZenburn" version="142" parent_scheme="Default">
   <metaInfo>
-    <property name="created">2019-07-23T12:52:58</property>
+    <property name="created">2019-07-24T16:06:32</property>
     <property name="ide">Idea</property>
     <property name="ideVersion">2019.1.1.0.0</property>
-    <property name="modified">2019-07-23T12:53:09</property>
+    <property name="modified">2019-07-24T16:06:45</property>
     <property name="originalScheme">MyZenburn</property>
   </metaInfo>
   <colors>
@@ -595,7 +595,7 @@
     </option>
     <option name="WRONG_REFERENCES_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="bc3f3c" />
+        <option name="FOREGROUND" value="ff6c18" />
       </value>
     </option>
     <option name="XML_ATTRIBUTE_NAME">
