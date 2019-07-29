@@ -13,7 +13,7 @@ nix-env -iA nixos.firefox nixos.termite nixos.ranger nixos.slack \
         nixos.python36Packages.glances nixos.chkrootkit nixos.rstudio \
         nixos.ammonite nixos.gnuplot nixos.zip nixos.thunderbird \
         nixpkgs.protonmail-bridge nixos.f3 nixos.cryptsetup nixos.partition-manager \
-        nixos.remmina
+        nixos.remmina nixos.epiphany
 
 # Media
 
