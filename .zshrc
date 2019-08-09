@@ -5,7 +5,8 @@
 # |___/_| |_|\___|_|_|  \___\___/|_| |_|_| |_|\__, |\__,_|_|  \__,_|\__|_|\___/|_| |_|
 #                                             |___/
 
-ZSH_THEME="random"
+#ZSH_THEME="random"
+ZSH_THEME="agnoster"
 ZSH_THEME_RANDOM_CANDIDATES=( "agnoster" "arrow" "awesomepanda" "clean" "cloud" "fwalch" \
 			      "gozilla" "gallois" "kolo" "mh" "minimal" "nanotech" \
 			      "norm" "robbyrussell" "sorin" "sunrise" "terminalparty" \
