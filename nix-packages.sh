@@ -20,7 +20,7 @@ nix-env -iA nixos.firefox nixos.termite nixos.ranger nixos.slack \
 nix-env -iA nixos.mplayer nixos.youtubeDL nixos.python36Packages.mps-youtube \
 	nixos.asciinema nixos.w3m nixos.libcaca nixos.vokoscreen nixos.espeak \
 	nixos.cmus nixos.powerline-fonts nixos.tetex nixos.lsof nixos.ffmpeg-full \
-        nixos.shotcut nixos.gimp
+        nixos.shotcut nixos.gimp nixos.ntfs3g
 
 # Development
 
