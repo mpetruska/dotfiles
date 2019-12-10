@@ -24,9 +24,10 @@ nix-env -iA nixos.mplayer nixos.youtubeDL nixos.python36Packages.mps-youtube \
 
 # Development
 
-nix-env -iA nixos.atom nixos.docker nixos.git nixos.sbt nixos.scala \
-	nixos.emacs nixos.jetbrains.idea-community nixos.vagrant \
-	nixos.dbeaver nixos.nodejs nixos.yarn nixos.figlet nixos.gnumake \
-	nixos.jq nixos.telnet nixos.stack nixos.cloc nixos.swiProlog \
-        nixos.opam nixos.gcc nixos.gnum4 nixos.highlight nixos.jdk11 \
-        nixpkgs.insomnia nixos.mercurial
+nix-env -iA nixos.atom nixos.docker nixos.docker-compose nixos.git \
+	nixos.sbt nixos.scala nixos.emacs \
+	nixos.jetbrains.idea-community nixos.vagrant nixos.dbeaver \
+	nixos.nodejs nixos.yarn nixos.figlet nixos.gnumake nixos.jq \
+	nixos.telnet nixos.stack nixos.cloc nixos.swiProlog \
+	nixos.opam nixos.gcc nixos.gnum4 nixos.highlight nixos.jdk11 \
+	nixpkgs.insomnia nixos.mercurial
