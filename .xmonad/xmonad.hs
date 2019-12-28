@@ -538,16 +538,13 @@ activeWarn      = red
 inactive        = zenburn_background
 layoutTextColor = green
 
--- myFont      = "-*-terminus-medium-*-*-*-*-160-*-*-*-*-*-*"
--- myBigFont   = "-*-terminus-medium-*-*-*-*-240-*-*-*-*-*-*"
--- myWideFont  = "-*-terminus-medium-*-*-*-*-240-*-*-*-*-*-*"
+-- myFont      = "-*-webbycaps-medium-r-normal-*-*-*-*-160-*-*-*-*-*-*"
+-- myBigFont   = "-*-webbycaps-medium-r-normal-*-*-*-*-240-*-*-*-*-*-*"
+-- myWideFont  = "-*-webbycaps-medium-r-normal-*-*-*-*-240-*-*-*-*-*-*"
 
-myFont      = "xft:terminus-medium:pixelsize=8"
-myBigFont   = "xft:terminus-medium:pixelsize=10"
-myWideFont  = "xft:terminus-medium:pixelsize=8"
-
--- myWideFont  = "xft:Eurostar Black Extended:"
---            ++ "style=Regular:pixelsize=180:hinting=true"
+myFont      = "xft:fixed-regular:pixelsize=12"
+myBigFont   = "xft:fixed-regular:pixelsize=14"
+myWideFont  = "xft:fixed-regular:pixelsize=12"
 
 -- this is a "fake title" used as a highlight bar in lieu of full borders
 -- (I find this a cleaner and less visually intrusive solution)

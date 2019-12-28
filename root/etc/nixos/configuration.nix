@@ -12,8 +12,6 @@
   # Boot settings.
   boot = {
 
-    kernelPackages = pkgs.linuxPackages_4_14;
-
     initrd = {
       # Disable journaling check on boot because virtualbox doesn't need it
       # checkJournalingFS = false;
@@ -31,7 +29,8 @@
   networking = {
     hostName = "Dell5490"; # Define your hostname.
     # hostId = # (use whatever was generated)
-    networkmanager.enable = true;
+    networkmanager.enable    = true;
+    firewall.allowedTCPPorts = [ 8010 ];
   };
 
   # Set your time zone.
@@ -102,8 +101,17 @@
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
-  programs.bash.enableCompletion = true;
-  programs.zsh.enable = true;
+
+  programs = {
+    bash.enableCompletion = true;
+    zsh.enable            = true;
+    seahorse.enable       = true;
+  };
+
+  location = {
+    latitude  = 47.4979;
+    longitude = 19.0402;    
+  };
 
   # List services that you want to enable.
   services = {
@@ -179,8 +187,6 @@
 
     redshift = {
       enable            = true;
-      latitude          = "47.4979";
-      longitude         = "19.0402";
       temperature.day   = 5700;
       temperature.night = 3500;
     };
@@ -192,7 +198,6 @@
 
     gnome3 = {
       gnome-keyring.enable = true;
-      seahorse.enable      = true;
       at-spi2-core.enable  = true;
     };
 
