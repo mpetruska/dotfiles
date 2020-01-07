@@ -18,8 +18,11 @@ source "${HOME}/.zgen/zgen.zsh"
 # if the init script doesn't exist
 if ! zgen saved; then
 
+  zgen oh-my-zsh
+
   # plugins
   zgen oh-my-zsh plugins/git
+  zgen oh-my-zsh plugins/gitfast
   zgen oh-my-zsh plugins/wd
   zgen load zsh-users/zsh-autosuggestions
   zgen load mafredri/zsh-async
@@ -27,28 +30,27 @@ if ! zgen saved; then
   zgen load wfxr/forgit
 
   # themes
-  zgen oh-my-zsh themes/arrow
-  zgen oh-my-zsh themes/awesomepanda
-  zgen oh-my-zsh themes/clean
-  zgen oh-my-zsh themes/cloud
-  zgen oh-my-zsh themes/fwalch
-  zgen oh-my-zsh themes/gozilla
-  zgen oh-my-zsh themes/gallois
-  zgen oh-my-zsh themes/kolo
+  zgen oh-my-zsh themes/agnoster
+  # zgen oh-my-zsh themes/arrow
+  # zgen oh-my-zsh themes/awesomepanda
+  # zgen oh-my-zsh themes/clean
+  # zgen oh-my-zsh themes/cloud
+  # zgen oh-my-zsh themes/fwalch
+  # zgen oh-my-zsh themes/gozilla
+  # zgen oh-my-zsh themes/gallois
+  # zgen oh-my-zsh themes/kolo
   # zgen load ergenekonyigit/lambda-gitster
-  zgen oh-my-zsh themes/mh
-  zgen oh-my-zsh themes/minimal
-  zgen oh-my-zsh themes/nanotech
-  zgen oh-my-zsh themes/norm
-  zgen oh-my-zsh themes/robbyrussell
-  zgen oh-my-zsh themes/sorin
-  zgen oh-my-zsh themes/sunrise
-  zgen oh-my-zsh themes/terminalparty
-  zgen oh-my-zsh themes/theunraveler
-  zgen oh-my-zsh themes/wedisagree
-  zgen oh-my-zsh themes/wezm
-
-  zgen oh-my-zsh
+  # zgen oh-my-zsh themes/mh
+  # zgen oh-my-zsh themes/minimal
+  # zgen oh-my-zsh themes/nanotech
+  # zgen oh-my-zsh themes/norm
+  # zgen oh-my-zsh themes/robbyrussell
+  # zgen oh-my-zsh themes/sorin
+  # zgen oh-my-zsh themes/sunrise
+  # zgen oh-my-zsh themes/terminalparty
+  # zgen oh-my-zsh themes/theunraveler
+  # zgen oh-my-zsh themes/wedisagree
+  # zgen oh-my-zsh themes/wezm
 
   # generate the init script from plugins above
   zgen save
