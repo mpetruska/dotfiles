@@ -90,3 +90,9 @@ wttr()
   [ "$COLUMNS" -lt 125 ] && request+='n'
   curl --compressed "$request"
 }
+
+# Local extensions
+
+if [ -f .zshrc_local ]; then
+  source .zshrc_local
+fi
