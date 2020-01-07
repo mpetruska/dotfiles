@@ -93,6 +93,6 @@ wttr()
 
 # Local extensions
 
-if [ -f .zshrc_local ]; then
-  source .zshrc_local
+if [ -f "$HOME/.zshrc_local" ]; then
+  source "$HOME/.zshrc_local"
 fi
