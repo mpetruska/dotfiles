@@ -35,21 +35,21 @@ Config {
 
                              , "--" -- battery specific options
                                        -- discharging status
-                                       , "-o"	, "<left>% (<timeleft>)"
+                                       , "-o"	, "<left>% <fc=#ffffff>(</fc><timeleft><fc=#ffffff>)</fc>"
                                        -- AC "on" status
-                                       , "-O"	, "<left>% (<fc=#dAA520>Charging</fc>)"
+                                       , "-O"	, "<left>% <fc=#ffffff>(</fc><fc=#dAA520>Charging</fc><fc=#ffffff>)</fc>"
                                        -- charged status
-                                       , "-i"	, "<left>% (<fc=#006000>Charged</fc>)"
+                                       , "-i"	, "<left>% <fc=#ffffff>(</fc><fc=#006000>Charged</fc><fc=#ffffff>)</fc>"
                              ] 50
-		 -- , Run Kbd [ ("us", "<fc=#D0D000>US</fc>")
-                 --          , ("hu", "<fc=#00D000>HU</fc>")
-                 --          ]
+		 , Run Kbd [ ("us", "<fc=#00D000>US</fc>")
+                           , ("hu", "<fc=#D0D000>HU</fc>")
+                           ]
                  , Run Date "%Y-%m-%d %a %H:%M" "date" 10
                  , Run Com "/home/mark/.xmonad/bin/status-vol" [] "volume" 10
                  , Run StdinReader
                  ],
     , sepChar = "%"
     , alignSep = "}{"
---    , template = "%StdinReader% }{ %multicpu%   %memory%   %swap%   %volume%   %wlp2s0wi%   %battery%   %kbd%   <fc=#FFFFCC>%date%</fc> "
-    , template = "%StdinReader% }{ %multicpu%   %memory%   %swap%   %volume%   %wlp2s0wi%   %battery%   <fc=#FFFFCC>%date%</fc> "
+    , template = "%StdinReader% }{ %multicpu%   %memory%   %swap%   %volume%   %wlp2s0wi%   %battery%   %kbd%   <fc=#FFFFCC>%date%</fc> "
+--    , template = "%StdinReader% }{ %multicpu%   %memory%   %swap%   %volume%   %wlp2s0wi%   %battery%   <fc=#FFFFCC>%date%</fc> "
     }
