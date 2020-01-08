@@ -66,9 +66,9 @@ bindkey '^P' fuzzy-search-and-edit
 #  \__\___/ \___/|_|___/  \___\___/|_| |_|_| |_|\__, |\__,_|_|  \__,_|\__|_|\___/|_| |_|
 #                                               |___/
 
-# Default editor
+# Default editor is Emacs as it should be...
 
-export EDITOR=vim
+export EDITOR="emacsclient -nw"
 
 # npm
 

@@ -8,3 +8,5 @@ feh --bg-scale .background &
 
 killall twmnd
 twmnd &
+
+emacs --bg-daemon
