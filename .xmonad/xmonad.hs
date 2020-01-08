@@ -473,7 +473,7 @@ myLauncher          = "dmenu_run"
 
 scratchXTerm x     = "xterm -bd black -ls -class " ++ x
 scratchTerminal    = scratchXTerm "nspConsole"
-scratchRanger      = scratchXTerm "nspRanger"  ++ " -e zsh -l -c \"EDITOR=vim ranger\""
+scratchRanger      = scratchXTerm "nspRanger"  ++ " -e zsh -l -c \"EDITOR='emacsclient -nw' ranger\""
 scratchCmus        = scratchXTerm "nspCmus"    ++ " -e cmus"
 scratchThunderbird = "thunderbird"
 
