@@ -29,4 +29,4 @@ nix-env -iA nixos.docker nixos.docker-compose nixos.git nixos.sbt \
 	nixos.vagrant nixos.dbeaver nixos.nodejs nixos.yarn \
 	nixos.figlet nixos.gnumake nixos.jq nixos.telnet nixos.stack \
 	nixos.cloc nixos.swiProlog nixos.opam nixos.gcc nixos.gnum4 \
-	nixos.highlight nixos.jdk11 nixpkgs.insomnia
+	nixos.highlight nixos.jdk11 nixpkgs.insomnia nixos.coursier
