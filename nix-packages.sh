@@ -13,7 +13,8 @@ nix-env -iA nixos.firefox nixos.ranger nixos.slack \
         nixos.python36Packages.glances nixos.chkrootkit nixos.rstudio \
         nixos.ammonite nixos.gnuplot nixos.zip nixos.thunderbird \
         nixos.f3 nixos.cryptsetup nixos.partition-manager \
-        nixos.remmina nixos.chromium nixos.unrar nixos.nmap-graphical
+        nixos.remmina nixos.chromium nixos.unrar nixos.nmap-graphical \
+        nixos.electrum
 
 # Media
 
