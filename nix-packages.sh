@@ -14,7 +14,7 @@ nix-env -iA nixos.firefox nixos.ranger nixos.slack \
         nixos.ammonite nixos.gnuplot nixos.zip nixos.thunderbird \
         nixos.f3 nixos.cryptsetup nixos.partition-manager \
         nixos.remmina nixos.chromium nixos.unrar nixos.nmap-graphical \
-        nixos.electrum nixos.s-tui
+        nixos.electrum nixos.s-tui nixos.filezilla
 
 # Media
 
