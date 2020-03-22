@@ -50,5 +50,9 @@
     ("84890723510d225c45aaff941a7e201606a48b973f0121cb9bcb0b9399be8cba" default)))
  '(org-agenda-files
    (quote
-    ("/home/mark/GitLab/org/archive.org" "/home/mark/GitLab/org/bookmarks.org" "/home/mark/GitLab/org/off-work.org" "/home/mark/GitLab/org/work.org"))))
+    ("/home/mark/GitLab/org/archive.org" "/home/mark/GitLab/org/bookmarks.org" "/home/mark/GitLab/org/off-work.org" "/home/mark/GitLab/org/work.org")))
+ '(package-selected-packages
+   (quote
+    (lsp-treemacs zenburn-theme yasnippet win-switch visual-regexp use-package tablist spacegray-theme scala-mode sbt-mode proof-general projectile popup paganini-theme overcast-theme org-plus-contrib org-bullets night-owl-theme neotree multiple-cursors lsp-ui haskell-mode gruber-darker-theme flycheck diminish dashboard darkburn-theme cyberpunk-theme company-lsp color-theme-sanityinc-tomorrow base16-theme auto-package-update all-the-icons))))
 
+(put 'scroll-left 'disabled nil)

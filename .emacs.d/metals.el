@@ -4,7 +4,6 @@
 (setq backup-directory-alist `((".*" . ,temporary-file-directory))
       auto-save-file-name-transforms `((".*" ,temporary-file-directory t)))
 
-
 ;; Enable scala-mode and sbt-mode
 (use-package scala-mode
   :ensure t
@@ -36,12 +35,14 @@
   ;; Optional - enable lsp-mode automatically in scala files
   :ensure t
   :defer  t
+  :init (setq lsp-keymap-prefix "C-c l")
   :hook (scala-mode . lsp)
   :config (setq lsp-prefer-flymake nil))
 
 (use-package lsp-ui
   :ensure t
-  :defer  t)
+  :defer  t
+  :init (setq lsp-ui-sideline-show-hover t))
 
 ;; lsp-mode supports snippets, but in order for them to work you need to use yasnippet
 ;; If you don't want to use snippets set lsp-enable-snippet to nil in your lsp-mode settings
