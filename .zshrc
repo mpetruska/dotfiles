@@ -56,6 +56,8 @@ if ! zgen saved; then
   zgen save
 fi
 
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#9c9c8c"
+
 # key bindings
 bindkey '^P' fuzzy-search-and-edit
 
