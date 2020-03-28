@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-undervolt --temp 98 --core -140 --cache -140 --gpu -140 --uncore -80 --analogio -80
+undervolt --temp 98 --core -130 --cache -130 --gpu -130 --uncore -80 --analogio -80
