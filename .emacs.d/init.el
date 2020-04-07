@@ -53,6 +53,9 @@
     ("/home/mark/GitLab/org/archive.org" "/home/mark/GitLab/org/bookmarks.org" "/home/mark/GitLab/org/off-work.org" "/home/mark/GitLab/org/work.org")))
  '(package-selected-packages
    (quote
-    (lsp-treemacs zenburn-theme yasnippet win-switch visual-regexp use-package tablist spacegray-theme scala-mode sbt-mode proof-general projectile popup paganini-theme overcast-theme org-plus-contrib org-bullets night-owl-theme neotree multiple-cursors lsp-ui haskell-mode gruber-darker-theme flycheck diminish dashboard darkburn-theme cyberpunk-theme company-lsp color-theme-sanityinc-tomorrow base16-theme auto-package-update all-the-icons))))
+    (lsp-treemacs zenburn-theme yasnippet win-switch visual-regexp use-package tablist spacegray-theme scala-mode sbt-mode proof-general projectile popup paganini-theme overcast-theme org-plus-contrib org-bullets night-owl-theme neotree multiple-cursors lsp-ui haskell-mode gruber-darker-theme flycheck diminish dashboard darkburn-theme cyberpunk-theme company-lsp color-theme-sanityinc-tomorrow base16-theme auto-package-update all-the-icons)))
+ '(safe-local-variable-values
+   (quote
+    ((projectile-project-compilation-cmd . "bloop compile --reporter scalac --no-color CherriskAPI")))))
 
 (put 'scroll-left 'disabled nil)
