@@ -35,11 +35,11 @@ Config {
 
                              , "--" -- battery specific options
                                        -- discharging status
-                                       , "-o"	, "<left>% <fc=#ffffff>(</fc><timeleft><fc=#ffffff>)</fc>"
+                                       , "-o"	, "<left><fc=#ffffff>% (</fc><timeleft><fc=#ffffff>)</fc>"
                                        -- AC "on" status
-                                       , "-O"	, "<left>% <fc=#ffffff>(</fc><fc=#dAA520>Charging</fc><fc=#ffffff>)</fc>"
+                                       , "-O"	, "<left><fc=#ffffff>% (</fc><fc=#dAA520>Charging</fc><fc=#ffffff>)</fc>"
                                        -- charged status
-                                       , "-i"	, "<left>% <fc=#ffffff>(</fc><fc=#006000>Charged</fc><fc=#ffffff>)</fc>"
+                                       , "-i"	, "<left><fc=#ffffff>% (</fc><fc=#006000>Charged</fc><fc=#ffffff>)</fc>"
                              ] 50
 		 , Run Kbd [ ("us", "<fc=#00D000>US</fc>")
                            , ("hu", "<fc=#D0D000>HU</fc>")
