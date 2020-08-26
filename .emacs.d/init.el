@@ -38,7 +38,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Hack" :foundry "CYRE" :slant normal :weight normal :height 77 :width normal)))))
+ '(default ((t (:family "Hack" :foundry "CYRE" :slant normal :weight normal :height 65 :width normal)))))
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -53,7 +53,7 @@
     ("/home/mark/GitLab/org/archive.org" "/home/mark/GitLab/org/bookmarks.org" "/home/mark/GitLab/org/off-work.org" "/home/mark/GitLab/org/work.org")))
  '(package-selected-packages
    (quote
-    (lsp-treemacs zenburn-theme yasnippet win-switch visual-regexp use-package tablist spacegray-theme scala-mode sbt-mode proof-general projectile popup paganini-theme overcast-theme org-plus-contrib org-bullets night-owl-theme neotree multiple-cursors lsp-ui haskell-mode gruber-darker-theme flycheck diminish dashboard darkburn-theme cyberpunk-theme company-lsp color-theme-sanityinc-tomorrow base16-theme auto-package-update all-the-icons)))
+    (posframe lsp-treemacs zenburn-theme yasnippet win-switch visual-regexp use-package tablist spacegray-theme scala-mode sbt-mode proof-general projectile popup paganini-theme overcast-theme org-plus-contrib org-bullets night-owl-theme neotree multiple-cursors lsp-ui haskell-mode gruber-darker-theme flycheck diminish dashboard darkburn-theme cyberpunk-theme company-lsp color-theme-sanityinc-tomorrow base16-theme auto-package-update all-the-icons)))
  '(safe-local-variable-values
    (quote
     ((projectile-project-compilation-cmd . "bloop compile --reporter scalac --no-color CherriskAPI-test")

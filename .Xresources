@@ -1,7 +1,8 @@
 ! xterm
 
 xterm*faceName: Hack for Powerline, Medium
-xterm*faceSize: 8
+xterm*faceSize: 6
+! xterm*faceSize: 16
 
 xterm*loginshell: true
 

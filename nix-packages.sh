@@ -15,14 +15,15 @@ nix-env -iA nixos.firefox nixos.ranger nixos.slack \
         nixos.f3 nixos.cryptsetup nixos.partition-manager \
         nixos.remmina nixos.chromium nixos.unrar nixos.nmap-graphical \
         nixos.electrum nixos.s-tui nixos.filezilla nixos.undervolt \
-        nixos.veracrypt nixos.p7zip
+        nixos.veracrypt nixos.p7zip nixos.parted nixos.mtools
 
 # Media
 
 nix-env -iA nixos.mplayer nixos.youtubeDL nixos.asciinema nixos.w3m \
 	nixos.libcaca nixos.vokoscreen nixos.espeak nixos.cmus \
 	nixos.powerline-fonts nixos.tetex nixos.lsof nixos.ffmpeg-full \
-	nixos.shotcut nixos.gimp nixos.ntfs3g nixos.exfat nixos.xpdf
+	nixos.shotcut nixos.gimp nixos.ntfs3g nixos.exfat nixos.xpdf \
+        nixos.handbrake
 
 # Development
 
@@ -32,4 +33,4 @@ nix-env -iA nixos.docker nixos.docker-compose nixos.git nixos.sbt \
 	nixos.figlet nixos.gnumake nixos.jq nixos.telnet nixos.stack \
 	nixos.cloc nixos.swiProlog nixos.opam nixos.gcc nixos.gnum4 \
 	nixos.highlight nixos.jdk11 nixpkgs.insomnia nixos.coursier \
-        nixos.bloop
+        nixos.bloop nixpkgs.vscode
