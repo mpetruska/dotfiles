@@ -1,0 +1,27 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "window.menuBarVisibility": "hidden",
+    "editor.fontFamily": "Hack, 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontSize": 9,
+    "zenMode.hideLineNumbers": false,
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "workbench.colorTheme": "Zenburn",
+    "editor.cursorStyle": "block",
+    "workbench.activityBar.visible": false,
+    "editor.renderIndentGuides": false,
+    "editor.renderLineHighlight": "gutter",
+    "editor.roundedSelection": false,
+    "editor.showFoldingControls": "always",
+    "workbench.preferredDarkColorTheme": "Zenburn",
+    "extensions.ignoreRecommendations": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "window.enableMenuBarMnemonics": false,
+    "files.watcherExclude": {
+        "**/.bloop": true,
+        "**/.metals": true,
+        "**/.ammonite": true
+    },
+    "terminal.integrated.fontFamily": "Hack",
+    "terminal.integrated.fontSize": 9
+}
