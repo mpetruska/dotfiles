@@ -13,7 +13,6 @@
     "editor.roundedSelection": false,
     "workbench.preferredDarkColorTheme": "Zenburn",
     "extensions.ignoreRecommendations": false,
-    "editor.multiCursorModifier": "ctrlCmd",
     "window.enableMenuBarMnemonics": false,
     "files.watcherExclude": {
         "**/.bloop": true,
