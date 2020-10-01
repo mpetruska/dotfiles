@@ -1,7 +1,7 @@
 {
     "workbench.startupEditor": "newUntitledFile",
     "editor.fontFamily": "Hack, 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-    "editor.fontSize": 9,
+    "editor.fontSize": 8,
     "zenMode.hideLineNumbers": false,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
@@ -19,7 +19,7 @@
         "**/.ammonite": true
     },
     "terminal.integrated.fontFamily": "Hack",
-    "terminal.integrated.fontSize": 9,
+    "terminal.integrated.fontSize": 8,
     "window.menuBarVisibility": "toggle",
     "workbench.tree.indent": 18,
     "workbench.tree.renderIndentGuides": "none",
@@ -37,5 +37,10 @@
     "gitlens.views.compare.location": "gitlens",
     "gitlens.views.search.location": "gitlens",
     "editor.tabSize": 2,
-    "editor.minimap.size": "fit"
+    "editor.minimap.size": "fit",
+    "editor.glyphMargin": false,
+    "editor.renderFinalNewline": false,
+    "terminal.integrated.rendererType": "dom",
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.scrollback": 10000
 }
