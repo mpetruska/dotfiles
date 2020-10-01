@@ -5,3 +5,5 @@
 	default = simple
 [core]
 	editor = emacsclient -nw
+[pull]
+	rebase = false
