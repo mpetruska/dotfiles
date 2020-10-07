@@ -18,7 +18,7 @@ for file in $(find $SOURCE_DIR \
 do
   TARGET=$(realpath --relative-base="$SOURCE_DIR" "$file")
   mkdir -p "$(dirname "$TARGET")"
-  ln -s -v $file $TARGET
+  ln -s -v "$file" $TARGET
 done
 
 cp -n -v $SOURCE_DIR/.bashrc_local .
