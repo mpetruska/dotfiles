@@ -15,7 +15,8 @@ nix-env -iA nixos.firefox nixos.ranger nixos.slack \
         nixos.f3 nixos.cryptsetup nixos.partition-manager \
         nixos.remmina nixos.chromium nixos.unrar nixos.nmap-graphical \
         nixos.electrum nixos.s-tui nixos.filezilla nixos.undervolt \
-        nixos.veracrypt nixos.p7zip nixos.parted nixos.mtools
+        nixos.veracrypt nixos.p7zip nixos.parted nixos.mtools \
+        nixos.lxqt.lxqt-notificationd
 
 # Media
 

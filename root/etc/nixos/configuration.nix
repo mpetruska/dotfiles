@@ -61,7 +61,6 @@
     killall
     libnotify
     networkmanager_dmenu
-    twmn
     xorg.xbacklight
     xorg.xgamma
 

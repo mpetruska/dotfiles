@@ -6,7 +6,7 @@ compton -f &
 
 feh --bg-scale .background &
 
-killall twmnd
-twmnd &
+killall lxqt-notificationd
+lxqt-notificationd &
 
 emacs --bg-daemon
