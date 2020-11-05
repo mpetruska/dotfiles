@@ -14,9 +14,9 @@
     "extensions.ignoreRecommendations": false,
     "window.enableMenuBarMnemonics": false,
     "files.watcherExclude": {
-        "**/.bloop": true,
-        "**/.metals": true,
-        "**/.ammonite": true
+      "**/.bloop": true,
+      "**/.metals": true,
+      "**/.ammonite": true
     },
     "terminal.integrated.fontFamily": "Hack",
     "terminal.integrated.fontSize": 8,
@@ -42,5 +42,11 @@
     "editor.renderFinalNewline": false,
     "terminal.integrated.rendererType": "dom",
     "terminal.integrated.copyOnSelection": true,
-    "terminal.integrated.scrollback": 10000
+    "terminal.integrated.scrollback": 10000,
+    "gitProjectManager.baseProjectsFolders": [
+      "/home/mark/Wst/GitLab",
+      "/home/mark/SiofokiAllatvedo/GitHub",
+      "/home/mark/GitHub",
+      "/home/mark/GitLab"
+    ]
 }
