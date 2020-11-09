@@ -6,7 +6,7 @@ compton -f &
 
 feh --bg-scale .background &
 
-killall lxqt-notificationd
-lxqt-notificationd &
+killall xfce4-notifyd
+xfce4-notifyd &
 
 emacs --bg-daemon
