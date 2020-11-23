@@ -19,7 +19,7 @@
                                ("gnu" . 10)
                                ("melpa" . 0)))
 
-(package-initialize)
+;; (package-initialize)
 (when (not package-archive-contents)
   (package-refresh-contents))
 
