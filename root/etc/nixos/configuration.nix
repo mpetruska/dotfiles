@@ -61,6 +61,7 @@
     killall
     libnotify
     networkmanager_dmenu
+    twmn
     xorg.xbacklight
     xorg.xgamma
 
@@ -102,6 +103,7 @@
   # started in user sessions.
 
   programs = {
+    adb.enable            = true;
     bash.enableCompletion = true;
     zsh.enable            = true;
     seahorse.enable       = true;
@@ -234,7 +236,7 @@
     isNormalUser = true;
     group        = "users";
     home         = "/home/mark";
-    extraGroups  = [ "wheel" "networkmanager" "docker" "vboxusers" ];
+    extraGroups  = [ "wheel" "networkmanager" "docker" "vboxusers" "adbusers" ];
     shell        = pkgs.zsh;
   };
 
