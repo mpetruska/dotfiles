@@ -50,5 +50,7 @@
       "/home/mark/GitLab"
     ],
     "git.confirmSync": false,
-    "git.autofetch": true
+    "git.autofetch": true,
+    "numberedBookmarks.navigateThroughAllFiles": "replace",
+    "numberedBookmarks.saveBookmarksInProject": true
 }

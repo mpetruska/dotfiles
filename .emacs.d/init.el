@@ -44,19 +44,15 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-enabled-themes (quote (zenburn)))
+ '(custom-enabled-themes '(zenburn))
  '(custom-safe-themes
-   (quote
-    ("84890723510d225c45aaff941a7e201606a48b973f0121cb9bcb0b9399be8cba" default)))
+   '("78e9a3e1c519656654044aeb25acb8bec02579508c145b6db158d2cfad87c44e" "84890723510d225c45aaff941a7e201606a48b973f0121cb9bcb0b9399be8cba" default))
  '(org-agenda-files
-   (quote
-    ("/home/mark/GitLab/org/archive.org" "/home/mark/GitLab/org/bookmarks.org" "/home/mark/GitLab/org/off-work.org" "/home/mark/GitLab/org/work.org")))
+   '("/home/mark/GitLab/org/archive.org" "/home/mark/GitLab/org/bookmarks.org" "/home/mark/GitLab/org/off-work.org" "/home/mark/GitLab/org/work.org"))
  '(package-selected-packages
-   (quote
-    (posframe lsp-treemacs zenburn-theme yasnippet win-switch visual-regexp use-package tablist spacegray-theme scala-mode sbt-mode proof-general projectile popup paganini-theme overcast-theme org-plus-contrib org-bullets night-owl-theme neotree multiple-cursors lsp-ui haskell-mode gruber-darker-theme flycheck diminish dashboard darkburn-theme cyberpunk-theme company-lsp color-theme-sanityinc-tomorrow base16-theme auto-package-update all-the-icons)))
+   '(posframe lsp-treemacs zenburn-theme yasnippet win-switch visual-regexp use-package tablist spacegray-theme scala-mode sbt-mode proof-general projectile popup paganini-theme overcast-theme org-plus-contrib org-bullets night-owl-theme neotree multiple-cursors lsp-ui haskell-mode gruber-darker-theme flycheck diminish dashboard darkburn-theme cyberpunk-theme company-lsp color-theme-sanityinc-tomorrow base16-theme auto-package-update all-the-icons))
  '(safe-local-variable-values
-   (quote
-    ((projectile-project-compilation-cmd . "bloop compile --reporter scalac --no-color CherriskAPI-test")
-     (projectile-project-compilation-cmd . "bloop compile --reporter scalac --no-color CherriskAPI")))))
+   '((projectile-project-compilation-cmd . "bloop compile --reporter scalac --no-color CherriskAPI-test")
+     (projectile-project-compilation-cmd . "bloop compile --reporter scalac --no-color CherriskAPI"))))
 
 (put 'scroll-left 'disabled nil)
