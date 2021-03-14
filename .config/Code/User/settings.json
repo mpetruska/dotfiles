@@ -52,5 +52,8 @@
     "git.confirmSync": false,
     "git.autofetch": true,
     "numberedBookmarks.navigateThroughAllFiles": "replace",
-    "numberedBookmarks.saveBookmarksInProject": true
+    "numberedBookmarks.saveBookmarksInProject": true,
+    "explorer.confirmDelete": false,
+    "window.zoomLevel": 0,
+    "daml.telemetry": "Disable"
 }
