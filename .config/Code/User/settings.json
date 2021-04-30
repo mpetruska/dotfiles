@@ -1,6 +1,5 @@
 {
     "workbench.startupEditor": "newUntitledFile",
-    "editor.fontFamily": "Hack, 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.fontSize": 9,
     "zenMode.hideLineNumbers": false,
     "telemetry.enableCrashReporter": false,
@@ -55,5 +54,6 @@
     "numberedBookmarks.saveBookmarksInProject": true,
     "explorer.confirmDelete": false,
     "window.zoomLevel": 0,
-    "daml.telemetry": "Disable"
+    "daml.telemetry": "Disable",
+    "editor.fontFamily": "Meslo LG M, Hack, Inconsolata, 'Source Code Pro for Powerline', 'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'"
 }
