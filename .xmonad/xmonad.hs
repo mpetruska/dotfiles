@@ -1235,9 +1235,9 @@ myKeys conf = let
     subKeys "System"
     [ ("M-r"                    , addName "Rebuild & restart XMonad"        $ spawn "xmonad --recompile && xmonad --restart")
     , ("M-S-e"                  , addName "Quit XMonad"                     $ confirmPrompt hotPromptTheme "Quit XMonad" $ io (exitWith ExitSuccess))
-    , ("M-x"                    , addName "Lock screen"                     $ spawn "i3lock --color=000000")
+    , ("M-x"                    , addName "Lock screen"                     $ spawn "DISPLAY=:0 i3lock --color=000000")
     , ("M-<F4>"                 , addName "Print Screen"                    $ spawn "spectacle --region")
-    , ("M-<F8>"                 , addName "Hibernate"                       $ spawn "i3lock --color=000000 && systemctl hibernate")
+    , ("M-<F8>"                 , addName "Hibernate"                       $ spawn "DISPLAY=:0 i3lock --color=000000 && systemctl hibernate")
     , ("M-F1"                   , addName "Show Keybindings"                $ return ())
     ] ^++^
 
