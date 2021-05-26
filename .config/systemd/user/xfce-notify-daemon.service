@@ -1,9 +1,0 @@
-[Unit]
-Description=Service that keeps xfce-notifyd alive.
-
-[Service]
-ExecStart=/home/mark/.nix-profile/bin/xfce4-notifyd
-Restart=always
-
-[Install]
-WantedBy=graphical.target

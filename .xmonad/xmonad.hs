@@ -1662,7 +1662,8 @@ myManageHook =
                            "_NET_WM_WINDOW_TYPE_SPLASH" -?> doCenterFloat
             , resource =? "console" -?> tileBelowNoFocus
             , isFullscreen -?> doFullFloat
-            , pure True -?> tileBelow ]
+            , pure True -?> tileBelow
+            ]
         isBrowserDialog = isDialog <&&> className =? myBrowserClass
         gtkFile = "GtkFileChooserDialog"
         isRole = stringProperty "WM_WINDOW_ROLE"
