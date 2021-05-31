@@ -1492,8 +1492,8 @@ myKeys conf = let
     --[ ("<XF86MonBrightnessUp>"   , addName "Brightness up"               $ spawn "xbacklight + 1")
     --, ("<XF86MonBrightnessDown>" , addName "Brightness down"             $ spawn "xbacklight - 1")
     --]
-    [ ("<XF86MonBrightnessUp>"   , addName "Brightness up"               $ spawn "echo $((`cat /sys/class/backlight/intel_backlight/brightness` + 50)) | tee /sys/class/backlight/intel_backlight/brightness")
-    , ("<XF86MonBrightnessDown>" , addName "Brightness down"             $ spawn "echo $((`cat /sys/class/backlight/intel_backlight/brightness` - 50)) | tee /sys/class/backlight/intel_backlight/brightness")
+    [ ("<XF86MonBrightnessUp>"   , addName "Brightness up"               $ spawn "echo $((`cat /sys/class/backlight/intel_backlight/brightness` + 200)) | tee /sys/class/backlight/intel_backlight/brightness")
+    , ("<XF86MonBrightnessDown>" , addName "Brightness down"             $ spawn "echo $((`cat /sys/class/backlight/intel_backlight/brightness` - 200)) | tee /sys/class/backlight/intel_backlight/brightness")
     ]
 
     where
