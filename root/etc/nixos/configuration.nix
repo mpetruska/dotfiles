@@ -21,7 +21,8 @@
     loader.systemd-boot.enable = true;
     loader.efi.canTouchEfiVariables = true;
 
-    extraModulePackages = [ config.boot.kernelPackages.exfat-nofuse ];
+    kernelModules = [ "fuse" "kvm-intel" "coretemp" ];
+    # extraModulePackages = [ config.boot.kernelPackages.exfat-nofuse ];
 
   };
 
@@ -55,6 +56,7 @@
     compton
     dmenu
     feh
+    gnome3.adwaita-icon-theme
     haskellPackages.iwlib
     haskellPackages.xmobar
     i3lock
@@ -73,7 +75,7 @@
   security.wrappers.slock.source = "${pkgs.slock.out}/bin/slock";
 
   fonts = {
-    enableCoreFonts        = true;
+    # enableCoreFonts        = true;
     enableGhostscriptFonts = true;
     fonts = with pkgs; [
       bakoma_ttf
@@ -107,6 +109,9 @@
     bash.enableCompletion = true;
     zsh.enable            = true;
     seahorse.enable       = true;
+    dconf.enable          = true;
+    
+    ssh.askPassword = pkgs.lib.mkForce "${pkgs.libsForQt5.ksshaskpass.out}/bin/ksshaskpass";
   };
 
   location = {
@@ -131,17 +136,20 @@
       xkbOptions = "grp:alt_shift_toggle";
 
       libinput = {
-        enable             = true;
-        disableWhileTyping = true;
-        middleEmulation    = false;
-        tappingDragLock    = false;
+        enable = true;
+        touchpad = {
+          disableWhileTyping = true;
+          middleEmulation    = false;
+          tappingDragLock    = false;
+        };
       };
 
       displayManager = {
+        defaultSession = "none+xmonad";
         gdm    .enable = false;
         lightdm.enable = false;
         sddm   .enable = true;
-        slim   .enable = false;
+        # slim   .enable = false;
         xpra   .enable = false;
         sessionCommands = ''
 	
@@ -155,14 +163,14 @@
       };
 
       desktopManager = {
-        default              = "none";
+        # default              = "none";
         enlightenment.enable = false;
-        gnome3       .enable = false;
+        gnome        .enable = false;
         kodi         .enable = false;
         lumina       .enable = false;
         lxqt         .enable = false;
         mate         .enable = false;
-        maxx         .enable = false;
+        # maxx         .enable = false;
         pantheon     .enable = false;
         plasma5      .enable = true;
         xfce         .enable = false;
@@ -171,7 +179,7 @@
 
       windowManager = {
 
-        default = "xmonad";
+        # default = "xmonad";
         xmonad = {
           enable                 = true;
           enableContribAndExtras = true;
@@ -197,7 +205,7 @@
       timeout = 1;
     };
 
-    gnome3 = {
+    gnome = {
       gnome-keyring.enable = true;
       at-spi2-core.enable  = true;
     };

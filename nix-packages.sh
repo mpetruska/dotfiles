@@ -16,7 +16,7 @@ nix-env -iA nixos.firefox nixos.ranger nixos.slack \
         nixos.remmina nixos.chromium nixos.unrar nixos.nmap-graphical \
         nixos.electrum nixos.s-tui nixos.filezilla nixos.undervolt \
         nixos.veracrypt nixos.p7zip nixos.parted nixos.mtools \
-        nixos.notify-osd
+        nixos.notify-osd-customizable
 
 # Media
 
@@ -33,6 +33,6 @@ nix-env -iA nixos.docker nixos.docker-compose nixos.git nixos.sbt \
 	nixos.vagrant nixos.dbeaver nixos.nodejs nixos.yarn \
 	nixos.figlet nixos.gnumake nixos.jq nixos.telnet nixos.stack \
 	nixos.cloc nixos.swiProlog nixos.opam nixos.gcc nixos.gnum4 \
-	nixos.highlight nixos.jdk11 nixpkgs.insomnia nixos.coursier \
+	nixos.highlight nixpkgs.insomnia nixos.coursier \
         nixos.bloop nixpkgs.vscode nixos.bind nixos.docker-machine \
-        nixos.soapui
+        nixos.soapui nixos.openconnect

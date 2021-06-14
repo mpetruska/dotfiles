@@ -305,7 +305,7 @@ main = do
         $ myConfig xmproc
 
 myConfig p = def
-        { borderWidth        = border
+        { XMonad.borderWidth = Main.border
         , clickJustFocuses   = myClickJustFocuses
         , focusFollowsMouse  = myFocusFollowsMouse
         , normalBorderColor  = myNormalBorderColor
