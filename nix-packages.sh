@@ -24,7 +24,7 @@ nix-env -iA nixos.mplayer nixos.youtubeDL nixos.asciinema nixos.w3m \
 	nixos.libcaca nixos.vokoscreen nixos.espeak nixos.cmus \
 	nixos.powerline-fonts nixos.tetex nixos.lsof nixos.ffmpeg-full \
 	nixos.shotcut nixos.gimp nixos.ntfs3g nixos.exfat nixos.xpdf \
-        nixos.handbrake
+        nixos.handbrake nixos.qutebrowser
 
 # Development
 
