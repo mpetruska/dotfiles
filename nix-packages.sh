@@ -16,7 +16,7 @@ nix-env -iA nixos.firefox nixos.ranger nixos.slack \
         nixos.remmina nixos.chromium nixos.unrar nixos.nmap-graphical \
         nixos.electrum nixos.s-tui nixos.filezilla nixos.undervolt \
         nixos.veracrypt nixos.p7zip nixos.parted nixos.mtools \
-        nixos.notify-osd-customizable
+        nixos.notify-osd-customizable nixos.nyxt nixos.qutebrowser
 
 # Media
 
@@ -24,7 +24,7 @@ nix-env -iA nixos.mplayer nixos.youtubeDL nixos.asciinema nixos.w3m \
 	nixos.libcaca nixos.vokoscreen nixos.espeak nixos.cmus \
 	nixos.powerline-fonts nixos.tetex nixos.lsof nixos.ffmpeg-full \
 	nixos.shotcut nixos.gimp nixos.ntfs3g nixos.exfat nixos.xpdf \
-        nixos.handbrake nixos.qutebrowser
+        nixos.handbrake
 
 # Development
 
@@ -35,4 +35,4 @@ nix-env -iA nixos.docker nixos.docker-compose nixos.git nixos.sbt \
 	nixos.cloc nixos.swiProlog nixos.opam nixos.gcc nixos.gnum4 \
 	nixos.highlight nixpkgs.insomnia nixos.coursier \
         nixos.bloop nixpkgs.vscode nixos.bind nixos.docker-machine \
-        nixos.soapui nixos.openconnect
+        nixos.soapui nixos.openconnect nixos.jdk8
