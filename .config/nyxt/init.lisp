@@ -6,7 +6,7 @@
 ;;  ((default-modes '(dark-mode emacs-mode certificate-exception-mode web-mode base-mode))))
 
 (define-configuration buffer
-  ((default-modes (append '(auto-mode dark-mode emacs-mode) %slot-default%))))
+  ((default-modes (append '(dark-mode auto-mode emacs-mode) %slot-default%))))
 
 (define-configuration buffer
   ((current-zoom-ratio 0.8)))

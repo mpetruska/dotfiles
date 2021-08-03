@@ -56,3 +56,5 @@
      (projectile-project-compilation-cmd . "bloop compile --reporter scalac --no-color CherriskAPI"))))
 
 (put 'scroll-left 'disabled nil)
+(put 'upcase-region 'disabled nil)
+(put 'downcase-region 'disabled nil)

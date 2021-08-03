@@ -19,7 +19,6 @@
     },
     "terminal.integrated.fontFamily": "Hack",
     "terminal.integrated.fontSize": 8,
-    "window.menuBarVisibility": "toggle",
     "workbench.tree.indent": 18,
     "workbench.tree.renderIndentGuides": "none",
     "workbench.enableExperiments": false,
@@ -53,7 +52,7 @@
     "numberedBookmarks.navigateThroughAllFiles": "replace",
     "numberedBookmarks.saveBookmarksInProject": true,
     "explorer.confirmDelete": false,
-    "window.zoomLevel": 0,
     "daml.telemetry": "Disable",
-    "editor.fontFamily": "Meslo LG M, Hack, Inconsolata, 'Source Code Pro for Powerline', 'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'"
+    "editor.fontFamily": "Meslo LG M, Hack, Inconsolata, 'Source Code Pro for Powerline', 'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "window.menuBarVisibility": "toggle"
 }
