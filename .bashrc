@@ -15,10 +15,6 @@ parse_git_directory() {
 
 export PS1="\W \[\033[32m\]\$(parse_git_directory)\[\033[00m\]\[\033[36m\]\$(parse_git_branch)\[\033[00m\] $ "
 
-# npm
-
-export PATH="node_modules/.bin:$PATH"
-
 # Local extensions
 
 if [ -f .bashrc_local ]; then

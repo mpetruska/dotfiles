@@ -1,8 +1,21 @@
 ! xterm
 
-xterm*faceName: Hack for Powerline, Medium
-xterm*faceSize: 6
-! xterm*faceSize: 16
+! xterm*faceName: Hack for Powerline, Medium
+! xterm*faceName: Hack Nerd Font Mono
+! xterm*faceName: FiraCode Nerd, Medium
+! xterm*faceName: agave Nerd Font Mono
+! xterm*faceName: CaskaydiaCove Nerd Font Mono
+xterm*faceName: FantasqueSansMono Nerd Font Mono
+! xterm*faceName: Monofur Nerd Font Mono
+! xterm*faceName: DejaVu Sans Mono
+! xterm*faceName: SauceCodePro Nerd Font
+! xterm*faceName: 3270SemiNarrow Nerd Font Mono
+! xterm*faceName: TerminessTTF Nerd Font Mono
+! xterm*faceName: ProggyCleanTT Nerd Font Mono
+! xterm*faceName: SpaceMono Nerd Font
+! xterm*faceName: Lekton Nerd Font Mono
+xterm*faceSize: 7
+! xterm*faceSize: 10
 
 xterm*loginshell: true
 

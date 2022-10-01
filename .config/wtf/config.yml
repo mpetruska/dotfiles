@@ -1,0 +1,211 @@
+wtf:
+  colors:
+    background: black
+    border:
+      focusable: darkslateblue
+      focused: orange
+      normal: gray
+    checked: yellow
+    highlight: 
+      fore: black
+      back: gray
+    rows:
+      even: yellow
+      odd: white
+  grid:
+    columns: [30, 35, 35, 35, 35, 35, 33]
+    rows: [11, 15, 13, 15, 12]
+  refreshInterval: 1s
+  openFileUtil: "open"
+  
+  mods:
+  
+    digitalclock:
+      color: orange
+      enabled: true
+      font: bigfont
+      hourFormat: 24
+      position:
+        top: 0
+        left: 0
+        height: 1
+        width: 1
+      refreshInterval: 1s
+      title: "Time"
+      type: "digitalclock"
+
+    prettyweather:
+      enabled: true
+      city: "Budapest"
+      position:
+        top: 1
+        left: 0
+        height: 2
+        width: 4
+      refreshInterval: 10m
+      unit: "m"
+      view: 2FQ
+      language: "en"
+
+    europe_time:
+      title: "Europe"
+      type: clocks
+      colors:
+        rows:
+          even: "lightblue"
+          odd: "white"
+      enabled: true
+      locations:
+        - GMT: "Etc/GMT"
+        - London: "Europe/London"
+        - Amsterdam: "Europe/Amsterdam"
+        - Berlin: "Europe/Berlin"
+        - Rome: "Europe/Rome"
+        - Brno: "Europe/Brno"
+        - Bratislava: "Europe/Bratislava"
+      position:
+        top: 0
+        left: 2
+        height: 1
+        width: 1
+      refreshInterval: 1m
+      sort: "natural"
+
+    americas_time:
+      title: "Americas"
+      type: clocks
+      colors:
+        rows:
+          even: "lightblue"
+          odd: "white"
+      enabled: true
+      locations:
+        - Vancouver: "America/Vancouver"
+        - New_York: "America/New_York"
+        - Sao_Paulo: "America/Sao_Paulo"
+        - Denver: "America/Denver"
+        - Iqaluit: "America/Iqaluit"
+        - Bahamas: "America/Nassau"
+        - Chicago: "America/Chicago"
+      position:
+        top: 0
+        left: 3
+        height: 1
+        width: 1
+      refreshInterval: 1m
+      sort: "natural"
+
+    battery:
+      type: power
+      title: "⚡️"
+      enabled: true
+      position:
+        top: 0
+        left: 6
+        height: 1
+        width: 1
+      refreshInterval: 1m
+
+    cryptolive:
+      enabled: true
+      position:
+        top: 1
+        left: 4
+        height: 2
+        width: 1
+      refreshInterval: 10m
+      currencies:
+        ADA:
+          displayName: Cardano
+          to:
+            - USD
+        LUNA:
+          displayName: Terra
+          to:
+            - USD
+        BTC:
+          displayName: Bitcoin
+          to:
+            - USD
+        ETH:
+          displayName: Ethereum
+          to:
+            - USD
+        KSM:
+          displayName: Kusama
+          to:
+            - USD
+        DOT:
+          displayName: PolkaDot
+          to:
+            - USD
+        MELD:
+          displayName: Meld
+          to:
+            - USD
+        XTZ:
+          displayName: Tezos
+          to:
+            - USD
+#      top:
+#        BTC:
+#          displayName: ADA
+#          limit: 5
+#          to:
+#            - USD
+      colors:
+        from:
+          name: coral
+          displayName: grey
+        to:
+          name: white
+          price: green
+        top:
+          from:
+            name: grey
+            displayName: coral
+          to:
+            name: red
+            field: white
+        value: green
+
+    docker:
+      type: docker
+      title: "Docker"
+      enabled: true
+      labelColor: lightblue
+      position:
+        top: 3
+        left: 1
+        height: 2
+        width: 1
+      refreshInterval: 1m
+
+    todolist:
+      type: todo
+      checkedIcon: "X"
+      colors:
+        checked: gray
+        highlight:
+          fore: "black"
+          back: "orange"
+      enabled: true
+      filename: "todo.yml"
+      position:
+        top: 3
+        left: 0
+        height: 2
+        width: 1
+      refreshInterval: 3600s
+
+    disks:
+      type: cmdrunner
+      title: "Disks"
+      cmd: ".config/wtf/disks.sh"
+      enabled: true
+      position:
+        top: 4
+        left: 2
+        height: 1
+        width: 3
+      refreshInterval: 3600s

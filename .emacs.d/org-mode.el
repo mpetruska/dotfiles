@@ -1,6 +1,6 @@
 
 (use-package org
-  :ensure org-plus-contrib
+  :ensure t
   :config
   (progn
     (global-set-key (kbd "C-c a") 'org-agenda)
@@ -14,4 +14,3 @@
   :init
   :config
   (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
-

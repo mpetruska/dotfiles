@@ -472,7 +472,8 @@ myLauncher          = "dmenu_run"
 --isPlex              = (resource =? plexResource)
 
 scratchXTerm x     = "xterm -bd black -ls -class " ++ x
-scratchTerminal    = scratchXTerm "nspConsole"
+--scratchTerminal    = scratchXTerm "nspConsole"
+scratchWTFUtil     = scratchXTerm "nspWTFUtil" ++ " -e wtfutil"
 scratchRanger      = scratchXTerm "nspRanger"  ++ " -e zsh -l -c \"EDITOR='emacsclient -nw' ranger\""
 scratchCmus        = scratchXTerm "nspCmus"    ++ " -e cmus"
 scratchThunderbird = "thunderbird"
@@ -485,7 +486,7 @@ scratchpads =
     --,   (NS "googleMusic"  googleMusicCommand isGoogleMusic nonFloating)
     --,   (NS "plex"  plexCommand isPlex defaultFloating)
     --,   (NS "xawtv" "xawtv" (resource =? "xawtv") (customFloating $ W.RationalRect (2/3) (1/6) (1/5) (1/3)) )
-      (NS "console"     scratchTerminal    (className =? "nspConsole") (customFloating $ W.RationalRect (1/64) (1/64) (7/8) (7/8)) )
+      (NS "console"     scratchWTFUtil     (className =? "nspWTFUtil") (customFloating $ W.RationalRect (1/64) (1/64) (7/8) (7/8)) )
     , (NS "ranger"      scratchRanger      (className =? "nspRanger" ) (customFloating $ W.RationalRect (2/63) (2/64) (7/8) (7/8)) )
     , (NS "cmus"        scratchCmus        (className =? "nspCmus"   ) (customFloating $ W.RationalRect (3/64) (3/64) (7/8) (7/8)) )
     , (NS "thunderbird" scratchThunderbird (className =? "Daily"     ) (customFloating $ W.RationalRect (4/64) (4/64) (7/8) (7/8)) )
@@ -542,9 +543,9 @@ layoutTextColor = green
 -- myBigFont   = "-*-webbycaps-medium-r-normal-*-*-*-*-240-*-*-*-*-*-*"
 -- myWideFont  = "-*-webbycaps-medium-r-normal-*-*-*-*-240-*-*-*-*-*-*"
 
-myFont      = "xft:fixed-regular:pixelsize=12"
-myBigFont   = "xft:fixed-regular:pixelsize=14"
-myWideFont  = "xft:fixed-regular:pixelsize=12"
+myFont      = "xft:Terminus:pixelsize=12"
+myBigFont   = "xft:Terminus:pixelsize=14"
+myWideFont  = "xft:Terminus:pixelsize=12"
 
 -- this is a "fake title" used as a highlight bar in lieu of full borders
 -- (I find this a cleaner and less visually intrusive solution)

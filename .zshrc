@@ -5,12 +5,17 @@
 # |___/_| |_|\___|_|_|  \___\___/|_| |_|_| |_|\__, |\__,_|_|  \__,_|\__|_|\___/|_| |_|
 #                                             |___/
 
+[[ $TERM == "dumb" ]] && unsetopt zle && PS1='$ ' && return
+
 #ZSH_THEME="random"
-ZSH_THEME="agnoster"
-ZSH_THEME_RANDOM_CANDIDATES=( "agnoster" "arrow" "awesomepanda" "clean" "cloud" "fwalch" \
-			      "gozilla" "gallois" "kolo" "mh" "minimal" "nanotech" \
-			      "norm" "robbyrussell" "sorin" "sunrise" "terminalparty" \
-			      "theunraveler" "wedisagree" "wezm" )
+#ZSH_THEME="agnoster"
+#ZSH_THEME="headline"
+#ZSH_THEME_RANDOM_CANDIDATES=( "agnoster" "arrow" "awesomepanda" "clean" "cloud" "fwalch" \
+#			      "gozilla" "gallois" "kolo" "mh" "minimal" "nanotech" \
+#			      "norm" "robbyrussell" "sorin" "sunrise" "terminalparty" \
+#			      "theunraveler" "wedisagree" "wezm" )
+
+SPACESHIP_EXIT_CODE_SHOW=true
 
 # load zgen
 source "${HOME}/.zgen/zgen.zsh"
@@ -30,14 +35,19 @@ if ! zgen saved; then
   zgen load wfxr/forgit
 
   # themes
-  zgen oh-my-zsh themes/agnoster
+  # zgen oh-my-zsh themes/agnoster
   # zgen oh-my-zsh themes/arrow
   # zgen oh-my-zsh themes/awesomepanda
   # zgen oh-my-zsh themes/clean
   # zgen oh-my-zsh themes/cloud
+  # zgen oh-my-zsh themes/darkblood
   # zgen oh-my-zsh themes/fwalch
   # zgen oh-my-zsh themes/gozilla
   # zgen oh-my-zsh themes/gallois
+  # zgen oh-my-zsh themes/jonathan
+  # zgen load Moarram/headline headline main
+  # zgen load spaceship-prompt/spaceship-prompt spaceship
+  # zgen load nikhilkmr300/omz-themes themes/matte-black-yellow-line
   # zgen oh-my-zsh themes/kolo
   # zgen load ergenekonyigit/lambda-gitster
   # zgen oh-my-zsh themes/mh
@@ -60,6 +70,9 @@ export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#9c9c9c"
 
 # key bindings
 bindkey '^P' fuzzy-search-and-edit
+
+# Starship prompt
+eval "$(starship init zsh)"
 
 #  _              _                        __ _                       _   _
 # | |_ ___   ___ | |___    ___ ___  _ __  / _(_) __ _ _   _ _ __ __ _| |_(_) ___  _ __

@@ -13,6 +13,7 @@ for file in $(find $SOURCE_DIR \
                    -not -path "*/.ssh/config_local" \
                    -not -path "*/root/*" \
                    -not -path "*/configure-zsh.sh" \
+                   -not -path "*/build-wtfutil.sh" \
                    -not -path "*/install.sh" \
                    -not -path "*/nix-packages.sh")
 do
