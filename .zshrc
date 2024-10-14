@@ -31,7 +31,7 @@ if ! zgen saved; then
   zgen oh-my-zsh plugins/wd
   zgen load zsh-users/zsh-autosuggestions
   zgen load mafredri/zsh-async
-  zgen load seletskiy/zsh-fuzzy-search-and-edit
+  # zgen load seletskiy/zsh-fuzzy-search-and-edit
   zgen load wfxr/forgit
 
   # themes
@@ -69,7 +69,7 @@ fi
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#9c9c9c"
 
 # key bindings
-bindkey '^P' fuzzy-search-and-edit
+# bindkey '^P' fuzzy-search-and-edit
 
 # Starship prompt
 eval "$(starship init zsh)"
@@ -83,7 +83,7 @@ eval "$(starship init zsh)"
 
 # Default editor is Emacs as it should be...
 
-export EDITOR="emacsclient -nw"
+export EDITOR="emacs -nw"
 
 # npm
 
@@ -111,3 +111,6 @@ wttr()
 if [ -f "$HOME/.zshrc_local" ]; then
   source "$HOME/.zshrc_local"
 fi
+
+export LC_ALL="en_US.UTF-8"
+export LC_CTYPE="en_US.UTF-8"

@@ -1,9 +1,0 @@
-[user]
-	name = Mark Petruska
-	email = petruska.mark@gmail.com
-[push]
-	default = simple
-[core]
-	editor = emacsclient -nw
-[pull]
-	rebase = false

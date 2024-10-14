@@ -1,9 +1,0 @@
-[Unit]
-Description=Service that keeps notify-osd alive.
-
-[Service]
-ExecStart=/home/mark/.nix-profile/bin/notify-osd
-Restart=always
-
-[Install]
-WantedBy=graphical.target

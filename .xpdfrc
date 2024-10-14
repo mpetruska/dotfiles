@@ -1,8 +1,0 @@
-initialSidebarState no
-bind ctrl-1 any singlePageMode
-bind ctrl-2 any continuousMode
-bind ctrl-3 any sideBySideSingleMode
-bind ctrl-4 any sideBySideContinuousMode
-bind ctrl-5 any horizontalContinuousMode
-bind ctrl-s any saveTabState
-bind ctrl-l any loadTabState
