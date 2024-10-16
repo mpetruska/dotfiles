@@ -66,13 +66,6 @@ noborderrule=3
 wmclass=Slack
 wmclassmatch=2
 
-[steam]
-Description=steam
-desktops=5ef74471-38b0-45a4-83b6-bf2d5b1151ee
-desktopsrule=3
-wmclass=steam
-wmclassmatch=2
-
 [thunderbird]
 Description=thunderbird
 desktops=ec56220e-3837-49a1-9121-339fe1b54986

@@ -85,18 +85,6 @@ eval "$(starship init zsh)"
 
 export EDITOR="emacs -nw"
 
-# npm
-
-export PATH="node_modules/.bin:$PATH"
-
-# Haskell Stack
-
-export PATH="${HOME}/.local/bin:$PATH"
-
-# opam configuration
-
-test -r /home/mark/.opam/opam-init/init.zsh && . /home/mark/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
-
 # wttr.in
 
 wttr()

@@ -10,6 +10,7 @@ for file in $(find $SOURCE_DIR \
                    -not -path "*/.git/*" \
                    -not -path "*/.gitignore" \
                    -not -path "*/.ssh/config_local" \
+                   -not -path "*/.config/kitty/kitty-local.conf" \
                    -not -path "*/install.sh")
 do
   TARGET=$(realpath --relative-base="$SOURCE_DIR" "$file")
@@ -18,5 +19,6 @@ do
 done
 
 cp -n -v $SOURCE_DIR/.ssh/config_local .ssh/
+cp -n -v $SOURCE_DIR/.config/kitty/kitty-local.conf .config/kitty/
 
 popd
