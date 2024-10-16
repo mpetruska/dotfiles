@@ -10,7 +10,7 @@ for file in $(find $SOURCE_DIR \
                    -not -path "*/.git/*" \
                    -not -path "*/.gitignore" \
                    -not -path "*/.ssh/config_local" \
-                   -not -path "*/install.sh" \
+                   -not -path "*/install.sh")
 do
   TARGET=$(realpath --relative-base="$SOURCE_DIR" "$file")
   mkdir -p "$(dirname "$TARGET")"
