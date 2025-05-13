@@ -18,7 +18,11 @@
 SPACESHIP_EXIT_CODE_SHOW=true
 
 # load zgen
-source "${HOME}/.zgen/zgen.zsh"
+if [ -f "${HOME}/.zgen/zgen.zsh" ]; then
+  source "${HOME}/.zgen/zgen.zsh"
+elif [ -f "/usr/share/zsh/share/zgen.zsh" ]; then
+  source "/usr/share/zsh/share/zgen.zsh"
+fi
 
 # if the init script doesn't exist
 if ! zgen saved; then
@@ -84,6 +88,7 @@ eval "$(starship init zsh)"
 # Default editor is Emacs as it should be...
 
 export EDITOR="emacs -nw"
+alias edit="emacs -nw"
 
 # wttr.in
 
